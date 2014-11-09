@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dbpedia-owl="http://dbpedia.org/ontology/"
+	xmlns:dbpprop="http://dbpedia.org/property/"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:prov="http://www.w3.org/ns/prov#" >
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Maven_(disambiguation)">
+    <dbpedia-owl:wikiPageDisambiguates rdf:resource="http://dbpedia.org/resource/Apache_Maven" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Apache_Maven_2">
+    <dbpedia-owl:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Apache_Maven" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Apache_maven">
+    <dbpedia-owl:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Apache_Maven" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Jakarta_Maven">
+    <dbpedia-owl:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Apache_Maven" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Maven_apache">
+    <dbpedia-owl:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Apache_Maven" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Maven_script">
+    <dbpedia-owl:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Apache_Maven" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Pom.xml">
+    <dbpedia-owl:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Apache_Maven" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Apache_Maven">
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Work" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Instrumentality103575240" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/CompilingTools" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/PhysicalEntity100001930" />
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Artifact100021939" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Object100002684" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Whole100003553" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Tool104451818" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Implement103563967" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/JavaDevelopmentTools" />
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing" />
+    <rdf:type rdf:resource="http://schema.org/CreativeWork" />
+    <rdf:type rdf:resource="http://umbel.org/umbel/rc/SoftwareObject" />
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Software" />
+    <owl:sameAs rdf:resource="http://ru.dbpedia.org/resource/Apache_Maven" />
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Apache_Maven" />
+    <owl:sameAs rdf:resource="http://nl.dbpedia.org/resource/Apache_Maven" />
+    <owl:sameAs rdf:resource="http://kk.dbpedia.org/resource/Apache_Maven" />
+    <owl:sameAs rdf:resource="http://zh.dbpedia.org/resource/Apache_Maven" />
+    <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Apache_Maven" />
+    <owl:sameAs rdf:resource="http://eu.dbpedia.org/resource/Maven" />
+    <owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m.04tj5z" />
+    <owl:sameAs rdf:resource="http://fa.dbpedia.org/resource/آپاچی_ماون" />
+    <owl:sameAs rdf:resource="http://ar.dbpedia.org/resource/أباتشي_ميفن" />
+    <owl:sameAs rdf:resource="http://pl.dbpedia.org/resource/Apache_Maven" />
+    <owl:sameAs rdf:resource="http://yago-knowledge.org/resource/Apache_Maven" />
+    <owl:sameAs rdf:resource="http://wikidata.dbpedia.org/resource/Q139941" />
+    <owl:sameAs rdf:resource="http://he.dbpedia.org/resource/Apache_Maven" />
+    <owl:sameAs rdf:resource="http://sv.dbpedia.org/resource/Apache_Maven" />
+    <owl:sameAs rdf:resource="http://pt.dbpedia.org/resource/Apache_Maven" />
+    <owl:sameAs rdf:resource="http://it.dbpedia.org/resource/Apache_Maven" />
+    <owl:sameAs rdf:resource="http://vi.dbpedia.org/resource/Apache_Maven" />
+    <owl:sameAs rdf:resource="http://ja.dbpedia.org/resource/Apache_Maven" />
+    <owl:sameAs rdf:resource="http://ko.dbpedia.org/resource/아파치_메이븐" />
+    <owl:sameAs rdf:resource="http://ro.dbpedia.org/resource/Maven" />
+    <owl:sameAs rdf:resource="http://de.dbpedia.org/resource/Apache_Maven" />
+    <owl:sameAs rdf:resource="http://uk.dbpedia.org/resource/Apache_Maven" />
+    <owl:sameAs rdf:resource="http://cs.dbpedia.org/resource/Apache_maven" />
+    <owl:sameAs rdf:resource="http://lt.dbpedia.org/resource/Apache_Maven" />
+    <owl:sameAs rdf:resource="http://wikidata.org/entity/Q139941" />
+    <owl:sameAs rdf:resource="http://es.dbpedia.org/resource/Maven" />
+    <owl:sameAs rdf:resource="http://hu.dbpedia.org/resource/Apache_Maven" />
+    <rdfs:label xml:lang="zh">Apache Maven</rdfs:label>
+    <rdfs:label xml:lang="ar">أباتشي ميفن</rdfs:label>
+    <rdfs:label xml:lang="de">Apache Maven</rdfs:label>
+    <rdfs:label xml:lang="en">Apache Maven</rdfs:label>
+    <rdfs:label xml:lang="it">Apache Maven</rdfs:label>
+    <rdfs:label xml:lang="nl">Apache Maven</rdfs:label>
+    <rdfs:label xml:lang="ru">Apache Maven</rdfs:label>
+    <rdfs:label xml:lang="es">Maven</rdfs:label>
+    <rdfs:label xml:lang="ja">Apache Maven</rdfs:label>
+    <rdfs:label xml:lang="fr">Apache Maven</rdfs:label>
+    <rdfs:label xml:lang="pl">Apache Maven</rdfs:label>
+    <rdfs:label xml:lang="pt">Apache Maven</rdfs:label>
+    <dcterms:subject rdf:resource="http://dbpedia.org/resource/Category:Compiling_tools" />
+    <dcterms:subject rdf:resource="http://dbpedia.org/resource/Category:Java_development_tools" />
+    <dcterms:subject rdf:resource="http://dbpedia.org/resource/Category:Build_automation" />
+    <dcterms:subject rdf:resource="http://dbpedia.org/resource/Category:Apache_Software_Foundation" />
+    <dcterms:subject rdf:resource="http://dbpedia.org/resource/Category:Software_using_the_Apache_license" />
+    <dbpprop:hasPhotoCollection rdf:resource="http://wifo5-03.informatik.uni-mannheim.de/flickrwrappr/photos/Apache_Maven" />
+    <foaf:homepage rdf:resource="http://maven.apache.org/" />
+    <foaf:homepage rdf:resource="http://maven.apache.org" />
+    <dbpedia-owl:wikiPageExternalLink rdf:resource="http://www.javaworld.com/javaworld/jw-05-2006/jw-0529-maven.html" />
+    <dbpedia-owl:wikiPageExternalLink rdf:resource="http://www.php-maven.org/" />
+    <dbpedia-owl:wikiPageExternalLink rdf:resource="http://docs.codehaus.org/display/MAVENUSER/The+Maven+2+tutorial" />
+    <dbpedia-owl:wikiPageExternalLink rdf:resource="http://today.java.net/pub/a/today/2007/03/01/building-web-applications-with-maven-2.html" />
+    <dbpedia-owl:wikiPageExternalLink rdf:resource="http://maven.apache.org/" />
+    <dbpedia-owl:wikiPageExternalLink rdf:resource="http://maven.apache.org/guides/introduction/introduction-to-plugins.html" />
+    <dbpedia-owl:wikiPageExternalLink rdf:resource="http://www.sonatype.com" />
+    <dbpedia-owl:wikiPageExternalLink rdf:resource="http://central.sonatype.org" />
+    <dbpedia-owl:wikiPageExternalLink rdf:resource="http://books.google.com/books?id=cBvZ4s72Z0gC" />
+    <dbpedia-owl:wikiPageExternalLink rdf:resource="http://www.codehaus.org" />
+    <dbpprop:developer rdf:resource="http://dbpedia.org/resource/Apache_Software_Foundation" />
+    <dbpprop:founder rdf:resource="http://dbpedia.org/resource/Jason_van_Zyl" />
+    <dbpprop:genre rdf:resource="http://dbpedia.org/resource/Build_automation" />
+    <dbpprop:latestReleaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-02-21+02:00</dbpprop:latestReleaseDate>
+    <dbpprop:latestReleaseVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.2</dbpprop:latestReleaseVersion>
+    <dbpprop:license xml:lang="en">Apache License 2.0</dbpprop:license>
+    <dbpprop:logo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">220</dbpprop:logo>
+    <dbpprop:name xml:lang="en">Apache Maven</dbpprop:name>
+    <dbpprop:operatingSystem rdf:resource="http://dbpedia.org/resource/Cross-platform" />
+    <dbpprop:programmingLanguage rdf:resource="http://dbpedia.org/resource/Java_(programming_language)" />
+    <dbpprop:status xml:lang="en">Active</dbpprop:status>
+    <foaf:depiction rdf:resource="http://commons.wikimedia.org/wiki/Special:FilePath/Maven_logo.svg" />
+    <dbpedia-owl:thumbnail rdf:resource="http://commons.wikimedia.org/wiki/Special:FilePath/Maven_logo.svg?width=300" />
+    <dbpedia-owl:abstract xml:lang="nl">Apache Maven is een softwaregereedschap voor Java-projectmanagement en geautomatiseerde softwarebouw. Het is gelijk in functionaliteit aan het gereedschap Apache Ant (en iets minder aan PHP&#39;s PEAR en Perl&#39;s CPAN), maar heeft een simpelere bouwconfiguratie, gebaseerd op de taal XML. Maven wordt gefaciliteerd door de Apache Software Foundation, waar het voorheen een onderdeel was van het Jakarta Project.Maven gebruikt een &quot;Project Object Model&quot; (POM) om de software onder constructie te duiden. In de POM staan verder de afhankelijkheden met andere modules en componenten, waaruit de volgorde van bouwen bepaald wordt. In de POM kunnen naast de gebruikelijke stappen als compileren en samenvoegen voor distributie, extra acties gedefinieerd worden die het ontwikkelproces kunnen ondersteunen. Voorbeelden hiervan zijn automatisch testen, (statische) codeverificatie en analyse van &quot;Code Coverage&quot; door de testen.Een belangrijk aspect van Maven is de zogenaamde &quot;repository&quot; waarin verschillende versies van componenten opgeslagen zijn. Dit kunnen componenten zijn waarvan de te bouwen software rechtstreeks afhankelijk is. Ook kunnen dit componenten zijn die het bouwproces zelf ondersteunen. Maven biedt ondersteuning om de repository automatisch te vullen met versies die op het internet aangeboden worden, via Apache en ander organisaties.</dbpedia-owl:abstract>
+    <dbpedia-owl:abstract xml:lang="de">Maven ist ein Build-Management-Tool der Apache Software Foundation und basiert auf Java. Mit ihm kann man insbesondere Java-Programme standardisiert erstellen und verwalten.Der Name Maven kommt aus dem Jiddischen und bedeutet soviel wie „Sammler des Wissens“.</dbpedia-owl:abstract>
+    <dbpedia-owl:abstract xml:lang="ru">Apache Maven — фреймворк для автоматизации сборки проектов, специфицированных на XML-языке POM (англ. Project Object Model).Слово maven происходит из языка Идиш и означает примерно «собиратель знания».Maven, в отличие от другого сборщика проектов Apache Ant, обеспечивает декларативную, а не императивную сборку проекта. То есть, в файлах проекта pom.xml содержится его декларативное описание, а не отдельные команды. Все задачи по обработке файлов Maven выполняет через плагины.</dbpedia-owl:abstract>
+    <dbpedia-owl:abstract xml:lang="it">In informatica Maven è un software usato principalmente per la gestione di progetti Java e build automation.Per funzionalità è similare ad Apache Ant, ma basato su concetti differenti. Può essere usato anche in progetti scritti in C#, Ruby, Scala e altri linguaggi. Il progetto Maven è ospitato da Apache Software Foundation, dove faceva parte dell&#39;ex progetto Jakarta.Maven usa un costrutto conosciuto come Project Object Model (POM); un file XML che descrive le dipendenze fra il progetto e le varie versioni di librerie necessarie nonché le dipendenze fra di esse. In questo modo si separano le librerie dalla directory di progetto utilizzando questo file descrittivo per definirne le relazioni.Maven effettua automaticamente il download di librerie Java e plug-in Maven dai vari repository definiti scaricandoli in locale o in un repository centralizzato lato sviluppo. Questo permette di recuperare in modo uniforme i vari file JAR e di poter spostare il progetto indipendentemente da un ambiente all&#39;altro avendo la sicurezza di utilizzare sempre le stesse versioni delle librerie.</dbpedia-owl:abstract>
+    <dbpedia-owl:abstract xml:lang="ja">Apache Maven（アパッチ メイヴン／メイヴェン）は、Java用プロジェクト管理ツールである。Apache Antに代わるものとして作られた。Apacheライセンスにて配布されているオープンソースソフトウェアである。</dbpedia-owl:abstract>
+    <dbpedia-owl:abstract xml:lang="es">Maven es una herramienta de software para la gestión y construcción de proyectos Java creada por Jason van Zyl, de Sonatype, en 2002. Es similar en funcionalidad a Apache Ant (y en menor medida a PEAR de PHP y CPAN de Perl), pero tiene un modelo de configuración de construcción más simple, basado en un formato XML. Estuvo integrado inicialmente dentro del proyecto Jakarta pero ahora ya es un proyecto de nivel superior de la Apache Software Foundation.Maven utiliza un Project Object Model (POM) para describir el proyecto de software a construir, sus dependencias de otros módulos y componentes externos, y el orden de construcción de los elementos. Viene con objetivos predefinidos para realizar ciertas tareas claramente definidas, como la compilación del código y su empaquetado.Una característica clave de Maven es que está listo para usar en red. El motor incluido en su núcleo puede dinámicamente descargar plugins de un repositorio, el mismo repositorio que provee acceso a muchas versiones de diferentes proyectos Open Source en Java, de Apache y otras organizaciones y desarrolladores. Este repositorio y su sucesor reorganizado, el repositorio Maven 2, pugnan por ser el mecanismo de facto de distribución de aplicaciones en Java, pero su adopción ha sido muy lenta. Maven provee soporte no sólo para obtener archivos de su repositorio, sino también para subir artefactos al repositorio al final de la construcción de la aplicación, dejándola al acceso de todos los usuarios. Una caché local de artefactos actúa como la primera fuente para sincronizar la salida de los proyectos a un sistema local.Maven está construido usando una arquitectura basada en plugins que permite que utilice cualquier aplicación controlable a través de la entrada estándar. En teoría, esto podría permitir a cualquiera escribir plugins para su interfaz con herramientas como compiladores, herramientas de pruebas unitarias, etcétera, para cualquier otro lenguaje. En realidad, el soporte y uso de lenguajes distintos de Java es mínimo. Actualmente existe un plugin para .Net Framework y es mantenido, y un plugin nativo para C/C++ fue alguna vez mantenido por Maven 1.</dbpedia-owl:abstract>
+    <dbpedia-owl:abstract xml:lang="fr">Apache Maven est un outil pour la gestion et l&#39;automatisation de production des projets logiciels Java en général et Java EE en particulier. L&#39;objectif recherché est comparable au système Make sous Unix : produire un logiciel à partir de ses sources, en optimisant les tâches réalisées à cette fin et en garantissant le bon ordre de fabrication.Il est semblable à l&#39;outil Ant, mais fournit des moyens de configuration plus simples, eux aussi basés sur le format XML. Maven est géré par l&#39;organisation Apache Software Foundation. Précédemment Maven était une branche de l&#39;organisation Jakarta Project. Maven utilise un paradigme connu sous le nom de Project Object Model (POM) afin de décrire un projet logiciel, ses dépendances avec des modules externes et l&#39;ordre à suivre pour sa production. Il est livré avec un grand nombre de tâches pré-définies, comme la compilation de code Java ou encore sa modularisation.Un élément clé et relativement spécifique de Maven est son aptitude à fonctionner en réseau. Une des motivations historiques de cet outil est de fournir un moyen de synchroniser des projets indépendants : publication standardisée d&#39;information, distribution automatique de modules jar. Ainsi en version de base, Maven peut dynamiquement télécharger du matériel sur des dépôts logiciels connus. Il propose ainsi la synchronisation transparente de modules nécessaires.Maven1 et Maven2 ont été développés en parallèle mais les versions futures seront basées sur la structure de la deuxième version. Les parties suivantes de l&#39;article traitent en priorité Maven2.</dbpedia-owl:abstract>
+    <dbpedia-owl:abstract xml:lang="en">Maven is a build automation tool used primarily for Java projects. Maven addresses two aspects of building software: First, it describes how software is built, and second, it describes its dependencies. Contrary to preceding tools like Apache Ant it uses conventions for the build procedure, and only exceptions need to be written down. An XML file describes the software project being built, its dependencies on other external modules and components, the build order, directories, and required plug-ins. It comes with pre-defined targets for performing certain well-defined tasks such as compilation of code and its packaging. Maven dynamically downloads Java libraries and Maven plug-ins from one or more repositories such as the Maven 2 Central Repository, and stores them in a local cache. This local cache of downloaded artifacts can also be updated with artifacts created by local projects. Public repositories can also be updated.Maven can be used to build and manage projects written in C#, Ruby, Scala, and other languages. The Maven project is hosted by the Apache Software Foundation, where it was formerly part of the Jakarta Project.Maven is built using a plugin-based architecture that allows it to make use of any application controllable through standard input. Theoretically, this would allow anyone to write plugins to interface with build tools (compilers, unit test tools, etc.) for any other language. In reality, support and use for languages other than Java has been minimal. Currently a plugin for the .NET framework exists and is maintained, and a C/C++ native plugin is maintained for Maven 2.Superseding technologies like gradle and sbt as build tools do not rely on XML any more, but keep the key concepts Maven introduced. With Apache Ivy a dedicated dependency manager was developed as well.</dbpedia-owl:abstract>
+    <dbpedia-owl:abstract xml:lang="pl">Apache Maven jest narzędziem automatyzującym budowę oprogramowania na platformę Java. Poszczególne funkcjonalności Mavena realizowane są poprzez wtyczki, które są automatycznie pobierane przy ich pierwszym wykorzystaniu. Plik określający sposób budowy aplikacji nosi nazwę POM-u (ang. Project Object Model). Maven wywodzi się z projektu Jakarta. Tak jak i inne produkty fundacji Apache, Maven jest rozprowadzany na licencji Apache License.</dbpedia-owl:abstract>
+    <dbpedia-owl:abstract xml:lang="ar">برنامج ميڤن (بالإنجليزية: Maven) هو أداة برمجية تستخدم في إدارة المشاريع وأتمتة البناء. برغم أن هذه اللغة استخدمت في البداية في لغة البرمجة جافا ولكن يمكن استخدامها كذلك لبناء وإدارة المشاريع التي كتبت بلغة سي شارب وروبي وسكالا وغيرها من اللغات. يعمل برنامج ميڤن بطريقة مشابهة لأداة أباتشي أنت ولكنه يعتمد على مبادئ مختلفة ويعمل بوسيلة أكثر اختلافا في العمق. تستضيف مؤسسة برمجيات أباتشي أداة ميڤن وقد كانت هذه المؤسسة سابقا جزءا من مشروع جاكارتا.يستخدم ميڤن بناء يعرف بنموذج كائن المشروع (بالإنجليزية: Project Object Model) أو ما يعرف اختصارا بـ POM لوصف مشروع البرمجية الذي سيتم بناؤه واعتماده على الوحدات الخارجية والمكونات وترتيب البناء. ويأتي ميڤن مع أهداف معرفة مسبقا لأداء مهام محددة معرفة جيدا مثل ترجمة الشيفرة ووضعها في حزمة واحدة.يقوم ميڤن بشكل ديناميكي بتنزيل مكتبات الجافا وإضافات ميڤن من مستودع واحد أو أكثر. يوفر ميڤن دعما مدمجا لاستعادة الملفات من مستودع ميڤن 2 الرئيسي ومستودعات ميڤن الأخرى ويمكن أن يحمّل الأدوات إلى مستودعات محددة بعد القيام ببناء ناجح للبرنامج. تعمل الذاكرة الخبيئة التي تتكون من الأدوات التي تم تحميلها كوسيلة أولية لمزامنة ناتج المشاريع الموجودة على نظام محلي.بني ميڤن باستخدام بناء يعتمد على استخدام الإضافة (Plug-In) ويسمح باستغلال أي تطبيق يمكن التحكم به من خلال مدخل قياسي. نظريا، يسمح هذا المبدأ لأي شخص بكتابة إضافة تتداخل مع أدوات البناء (المترجمات وأدوات اختبار الوحدة وغيرها) الخاصة بأي لغة أخرى. أما في الواقع؛ فإنه قد تم الحد من دعم واستخدام لغات البرمجة الأخرى ما عدا الجافا إلى أقل حد ممكن وتوجد حاليا إضافة لإطار .NET يتم الحفاظ عليها وبينما تتوافر إضافة خاصة بلغة سي/سي++ أصلية تتم صيانتها من أجل استخدامها في ميڤن-نيتف وميڤن-نار الخاصين بميڤن 2.</dbpedia-owl:abstract>
+    <dbpedia-owl:abstract xml:lang="zh">Apache Maven，是一个软件（特别是Java软件）项目管理及自动构建工具，由Apache软件基金会所提供。基于项目对象模型（缩写：POM）概念，Maven利用一个中央信息片断能管理一个项目的构建、报告和文档等步骤。曾是Jakarta项目的子项目，现为独立Apache项目。</dbpedia-owl:abstract>
+    <dbpedia-owl:abstract xml:lang="pt">Apache Maven, ou simplesmente Maven, é uma ferramenta de automação de compilação utilizada primariamente em projetos Java. Ela é similar à ferramenta Ant, mas é baseada em conceitos e trabalhos diferentes em um modo diferente. Também é utilizada para construir e gerenciar projetos escritos em C#, Ruby, Scala e outras linguagens. O projeto Maven é hospedado pela Apache Software Foundation, que fazia parte do antigo Projeto Jakarta.O Maven utiliza um arquivo XML (POM) para descrever o projeto de software sendo construído, suas dependências sobre módulos e componentes externos, a ordem de compilação, diretórios e plug-ins necessários. Ele vem com objetivos pré-definidos para realizar certas tarefas bem definidas como compilação de código e seu empacotamento.O Maven baixa bibliotecas Java e seus plug-ins dinamicamente de um ou mais repositórios, como o Maven 2 Central Repository, e armazena-os em uma área de cache local. Este cache local de artefatos baixados pode também ser atualizado com artefatos criados por projetos locais. Repositórios públicos podem também ser atualizados.O Maven é construído utilizando uma arquitetura baseada em plugin, que permite que ele faça uso de qualquer aplicação controlável através da entrada padrão. Teoricamente, isto permitiria qualquer um escrever plugins para fazer interface com ferramentas de construção (compiladores, ferramentas de teste de unidade, etc.) para qualquer outra linguagem. De fato, o suporte e uso para linguagens diferentes de Java tem sido mínimas. Atualmente existe um plugin para o framework .NET e é mantido, e um plugin nativo C/C++ é mantido para o Maven 2.</dbpedia-owl:abstract>
+    <foaf:name xml:lang="en">Apache Maven</foaf:name>
+    <dbpedia-owl:developer rdf:resource="http://dbpedia.org/resource/Apache_Software_Foundation" />
+    <dbpedia-owl:genre rdf:resource="http://dbpedia.org/resource/Build_automation" />
+    <dbpedia-owl:latestReleaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-02-21+02:00</dbpedia-owl:latestReleaseDate>
+    <dbpedia-owl:latestReleaseVersion>3.2.1</dbpedia-owl:latestReleaseVersion>
+    <dbpedia-owl:license rdf:resource="http://dbpedia.org/resource/Apache_License" />
+    <dbpedia-owl:operatingSystem rdf:resource="http://dbpedia.org/resource/Cross-platform" />
+    <dbpedia-owl:programmingLanguage rdf:resource="http://dbpedia.org/resource/Java_(programming_language)" />
+    <dbpedia-owl:status>Active</dbpedia-owl:status>
+    <dbpprop:wordnet_type rdf:resource="http://www.w3.org/2006/03/wn/wn20/instances/synset-software-noun-1" />
+    <prov:wasDerivedFrom rdf:resource="http://en.wikipedia.org/wiki/Apache_Maven?oldid=603318491" />
+    <rdfs:comment xml:lang="pt">Apache Maven, ou simplesmente Maven, é uma ferramenta de automação de compilação utilizada primariamente em projetos Java. Ela é similar à ferramenta Ant, mas é baseada em conceitos e trabalhos diferentes em um modo diferente. Também é utilizada para construir e gerenciar projetos escritos em C#, Ruby, Scala e outras linguagens.</rdfs:comment>
+    <rdfs:comment xml:lang="zh">Apache Maven，是一个软件（特别是Java软件）项目管理及自动构建工具，由Apache软件基金会所提供。基于项目对象模型（缩写：POM）概念，Maven利用一个中央信息片断能管理一个项目的构建、报告和文档等步骤。曾是Jakarta项目的子项目，现为独立Apache项目。</rdfs:comment>
+    <rdfs:comment xml:lang="ar">برنامج ميڤن (بالإنجليزية: Maven) هو أداة برمجية تستخدم في إدارة المشاريع وأتمتة البناء. برغم أن هذه اللغة استخدمت في البداية في لغة البرمجة جافا ولكن يمكن استخدامها كذلك لبناء وإدارة المشاريع التي كتبت بلغة سي شارب وروبي وسكالا وغيرها من اللغات. يعمل برنامج ميڤن بطريقة مشابهة لأداة أباتشي أنت ولكنه يعتمد على مبادئ مختلفة ويعمل بوسيلة أكثر اختلافا في العمق.</rdfs:comment>
+    <rdfs:comment xml:lang="it">In informatica Maven è un software usato principalmente per la gestione di progetti Java e build automation.Per funzionalità è similare ad Apache Ant, ma basato su concetti differenti. Può essere usato anche in progetti scritti in C#, Ruby, Scala e altri linguaggi.</rdfs:comment>
+    <rdfs:comment xml:lang="pl">Apache Maven jest narzędziem automatyzującym budowę oprogramowania na platformę Java. Poszczególne funkcjonalności Mavena realizowane są poprzez wtyczki, które są automatycznie pobierane przy ich pierwszym wykorzystaniu. Plik określający sposób budowy aplikacji nosi nazwę POM-u (ang. Project Object Model). Maven wywodzi się z projektu Jakarta. Tak jak i inne produkty fundacji Apache, Maven jest rozprowadzany na licencji Apache License.</rdfs:comment>
+    <rdfs:comment xml:lang="nl">Apache Maven is een softwaregereedschap voor Java-projectmanagement en geautomatiseerde softwarebouw. Het is gelijk in functionaliteit aan het gereedschap Apache Ant (en iets minder aan PHP&#39;s PEAR en Perl&#39;s CPAN), maar heeft een simpelere bouwconfiguratie, gebaseerd op de taal XML. Maven wordt gefaciliteerd door de Apache Software Foundation, waar het voorheen een onderdeel was van het Jakarta Project.Maven gebruikt een &quot;Project Object Model&quot; (POM) om de software onder constructie te duiden.</rdfs:comment>
+    <rdfs:comment xml:lang="ru">Apache Maven — фреймворк для автоматизации сборки проектов, специфицированных на XML-языке POM (англ. Project Object Model).Слово maven происходит из языка Идиш и означает примерно «собиратель знания».Maven, в отличие от другого сборщика проектов Apache Ant, обеспечивает декларативную, а не императивную сборку проекта. То есть, в файлах проекта pom.xml содержится его декларативное описание, а не отдельные команды. Все задачи по обработке файлов Maven выполняет через плагины.</rdfs:comment>
+    <rdfs:comment xml:lang="ja">Apache Maven（アパッチ メイヴン／メイヴェン）は、Java用プロジェクト管理ツールである。Apache Antに代わるものとして作られた。Apacheライセンスにて配布されているオープンソースソフトウェアである。</rdfs:comment>
+    <rdfs:comment xml:lang="en">Maven is a build automation tool used primarily for Java projects. Maven addresses two aspects of building software: First, it describes how software is built, and second, it describes its dependencies. Contrary to preceding tools like Apache Ant it uses conventions for the build procedure, and only exceptions need to be written down.</rdfs:comment>
+    <rdfs:comment xml:lang="es">Maven es una herramienta de software para la gestión y construcción de proyectos Java creada por Jason van Zyl, de Sonatype, en 2002. Es similar en funcionalidad a Apache Ant (y en menor medida a PEAR de PHP y CPAN de Perl), pero tiene un modelo de configuración de construcción más simple, basado en un formato XML.</rdfs:comment>
+    <rdfs:comment xml:lang="de">Maven ist ein Build-Management-Tool der Apache Software Foundation und basiert auf Java. Mit ihm kann man insbesondere Java-Programme standardisiert erstellen und verwalten.Der Name Maven kommt aus dem Jiddischen und bedeutet soviel wie „Sammler des Wissens“.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Apache Maven est un outil pour la gestion et l&#39;automatisation de production des projets logiciels Java en général et Java EE en particulier. L&#39;objectif recherché est comparable au système Make sous Unix : produire un logiciel à partir de ses sources, en optimisant les tâches réalisées à cette fin et en garantissant le bon ordre de fabrication.Il est semblable à l&#39;outil Ant, mais fournit des moyens de configuration plus simples, eux aussi basés sur le format XML.</rdfs:comment>
+    <dbpedia-owl:wikiPageID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1333305</dbpedia-owl:wikiPageID>
+    <dbpedia-owl:wikiPageRevisionID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">603318491</dbpedia-owl:wikiPageRevisionID>
+    <foaf:isPrimaryTopicOf rdf:resource="http://en.wikipedia.org/wiki/Apache_Maven" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Pom">
+    <dbpedia-owl:wikiPageDisambiguates rdf:resource="http://dbpedia.org/resource/Apache_Maven" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://fr.dbpedia.org/resource/Apache_Maven">
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Apache_Maven" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://de.dbpedia.org/resource/Apache_Maven">
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Apache_Maven" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wikidata.dbpedia.org/resource/Q139941">
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Apache_Maven" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://cs.dbpedia.org/resource/Apache_maven">
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Apache_Maven" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://es.dbpedia.org/resource/Maven">
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Apache_Maven" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://eu.dbpedia.org/resource/Maven">
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Apache_Maven" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://it.dbpedia.org/resource/Apache_Maven">
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Apache_Maven" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ja.dbpedia.org/resource/Apache_Maven">
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Apache_Maven" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://nl.dbpedia.org/resource/Apache_Maven">
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Apache_Maven" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pl.dbpedia.org/resource/Apache_Maven">
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Apache_Maven" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pt.dbpedia.org/resource/Apache_Maven">
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Apache_Maven" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Project_Object_Model">
+    <dbpedia-owl:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Apache_Maven" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://en.wikipedia.org/wiki/Apache_Maven">
+    <foaf:primaryTopic rdf:resource="http://dbpedia.org/resource/Apache_Maven" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ar.dbpedia.org/resource/أباتشي_ميفن">
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Apache_Maven" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://fa.dbpedia.org/resource/آپاچی_ماون">
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Apache_Maven" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://he.dbpedia.org/resource/Apache_Maven">
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Apache_Maven" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hu.dbpedia.org/resource/Apache_Maven">
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Apache_Maven" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://kk.dbpedia.org/resource/Apache_Maven">
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Apache_Maven" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lt.dbpedia.org/resource/Apache_Maven">
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Apache_Maven" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ro.dbpedia.org/resource/Maven">
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Apache_Maven" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ru.dbpedia.org/resource/Apache_Maven">
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Apache_Maven" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://sv.dbpedia.org/resource/Apache_Maven">
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Apache_Maven" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://uk.dbpedia.org/resource/Apache_Maven">
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Apache_Maven" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vi.dbpedia.org/resource/Apache_Maven">
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Apache_Maven" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://zh.dbpedia.org/resource/Apache_Maven">
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Apache_Maven" />
+  </rdf:Description>
+</rdf:RDF>

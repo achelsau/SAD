@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dbpedia-owl="http://dbpedia.org/ontology/"
+	xmlns:dbpprop="http://dbpedia.org/property/"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:prov="http://www.w3.org/ns/prov#" >
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Puppet_(disambiguation)">
+    <dbpedia-owl:wikiPageDisambiguates rdf:resource="http://dbpedia.org/resource/Puppet_(software)" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Puppet_(software)">
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Work" />
+    <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/WrittenCommunication106349220" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Communication100033020" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Writing106359877" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/CodingSystem106353757" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Code106355894" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Software106566077" />
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Abstraction100002137" />
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Software" />
+    <rdf:type rdf:resource="http://schema.org/CreativeWork" />
+    <owl:sameAs rdf:resource="http://yago-knowledge.org/resource/Puppet_(software)" />
+    <owl:sameAs rdf:resource="http://pl.dbpedia.org/resource/Puppet" />
+    <owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m.03d3cjz" />
+    <owl:sameAs rdf:resource="http://wikidata.dbpedia.org/resource/Q2095962" />
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Puppet_(software)" />
+    <owl:sameAs rdf:resource="http://es.dbpedia.org/resource/Puppet_(software)" />
+    <owl:sameAs rdf:resource="http://ja.dbpedia.org/resource/Puppet_(ソフトウェア)" />
+    <owl:sameAs rdf:resource="http://wikidata.org/entity/Q2095962" />
+    <owl:sameAs rdf:resource="http://de.dbpedia.org/resource/Puppet_(Software)" />
+    <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Puppet" />
+    <owl:sameAs rdf:resource="http://ru.dbpedia.org/resource/Puppet" />
+    <owl:sameAs rdf:resource="http://simple.dbpedia.org/resource/Puppet_(software)" />
+    <owl:sameAs rdf:resource="http://uk.dbpedia.org/resource/Puppet" />
+    <rdfs:label xml:lang="ja">Puppet (ソフトウェア)</rdfs:label>
+    <rdfs:label xml:lang="en">Puppet (software)</rdfs:label>
+    <rdfs:label xml:lang="fr">Puppet</rdfs:label>
+    <rdfs:label xml:lang="de">Puppet (Software)</rdfs:label>
+    <rdfs:label xml:lang="es">Puppet (software)</rdfs:label>
+    <rdfs:label xml:lang="pl">Puppet</rdfs:label>
+    <rdfs:label xml:lang="ru">Puppet</rdfs:label>
+    <dcterms:subject rdf:resource="http://dbpedia.org/resource/Category:Virtualization-related_software_for_Linux" />
+    <dcterms:subject rdf:resource="http://dbpedia.org/resource/Category:Configuration_management" />
+    <dcterms:subject rdf:resource="http://dbpedia.org/resource/Category:2005_software" />
+    <dcterms:subject rdf:resource="http://dbpedia.org/resource/Category:Free_software_programmed_in_Ruby" />
+    <dbpprop:hasPhotoCollection rdf:resource="http://wifo5-03.informatik.uni-mannheim.de/flickrwrappr/photos/Puppet_(software)" />
+    <foaf:homepage rdf:resource="http://www.puppetlabs.com/" />
+    <dbpedia-owl:wikiPageExternalLink rdf:resource="http://projects.puppetlabs.com/projects/puppet" />
+    <dbpedia-owl:wikiPageExternalLink rdf:resource="https://github.com/puppetlabs" />
+    <dbpedia-owl:wikiPageExternalLink rdf:resource="http://www.youtube.com/user/PuppetLabsInc" />
+    <dbpedia-owl:wikiPageExternalLink rdf:resource="http://www.apress.com/9781430230571" />
+    <dbpedia-owl:wikiPageExternalLink rdf:resource="http://www.apress.com/9781590599785" />
+    <dbpedia-owl:wikiPageExternalLink rdf:resource="http://www.puppetlabs.com/" />
+    <dbpedia-owl:frequentlyUpdated>yes</dbpedia-owl:frequentlyUpdated>
+    <dbpprop:caption xml:lang="en">Puppet manually invoked on a client</dbpprop:caption>
+    <dbpprop:developer rdf:resource="http://dbpedia.org/resource/Puppet_Labs" />
+    <dbpprop:frequentlyUpdated xml:lang="en">yes</dbpprop:frequentlyUpdated>
+    <dbpprop:genre rdf:resource="http://dbpedia.org/resource/Configuration_management" />
+    <dbpprop:license xml:lang="en">Apache for &gt;2.7.0; GPL for prior versions.</dbpprop:license>
+    <dbpprop:name xml:lang="en">Puppet</dbpprop:name>
+    <dbpprop:operatingSystem rdf:resource="http://dbpedia.org/resource/Microsoft_Windows" />
+    <dbpprop:operatingSystem rdf:resource="http://dbpedia.org/resource/Linux" />
+    <dbpprop:operatingSystem rdf:resource="http://dbpedia.org/resource/Unix-like" />
+    <dbpprop:programmingLanguage rdf:resource="http://dbpedia.org/resource/Ruby_(programming_language)" />
+    <dbpprop:screenshot rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">140228</dbpprop:screenshot>
+    <dbpprop:website rdf:resource="http://www.puppetlabs.com/" />
+    <foaf:depiction rdf:resource="http://commons.wikimedia.org/wiki/Special:FilePath/140228puppetrunExampleManuallyInvokedPackageUpdate.png" />
+    <dbpedia-owl:thumbnail rdf:resource="http://commons.wikimedia.org/wiki/Special:FilePath/140228puppetrunExampleManuallyInvokedPackageUpdate.png?width=300" />
+    <dbpedia-owl:abstract xml:lang="ru">Puppet (англ. марионетка) — кроссплатформенное клиент-серверное приложение, которое позволяет централизованно управлять конфигурацией операционных систем и программ, установленных на нескольких компьютерах. Puppet написан на языке программирования Ruby.Puppet позволяет просто настроить и впоследствии быстро управлять практически любой сетью на базе любой операционной системы Red Hat, CentOS, Fedora, Debian, Ubuntu, OpenSUSE, Solaris, BSD, Mac OS X и Microsoft Windows (через cygwin).Система Puppet достаточно популярна в мире IT-компаний, её используют в своей работе такие компании как: Google, Яндекс, Fedora Project, Стэнфордский университет, Red Hat, Siemens IT Solution, Badoo и SugarCRM.Узлы сети, управляемые с помощью Puppet, периодически опрашивают сервер, получают и применяют внесённые администратором изменения в конфигурацию. Конфигурация описывается на специальном декларативном языке.</dbpedia-owl:abstract>
+    <dbpedia-owl:abstract xml:lang="es">Puppet es una herramienta de gestión de la configuración de código abierto. Está escrito en Ruby y fue liberado bajo la Licencia Pública General de GNU (GPL) hasta la versión 2.7.0 y después bajo la licencia Apache 2.0. Puppet Labs y Puppet fueron fundados por Luke Kanies en el 2005.</dbpedia-owl:abstract>
+    <dbpedia-owl:abstract xml:lang="de">Puppet ist ein Tool zum Konfigurationsmanagement von Computern mit Betriebssystemen wie Unix, Linux und FreeBSD.Ein IT-Administrator kann damit an zentraler Stelle die Konfiguration von Rechnern in seinem Netzwerk verwalten.Puppet eignet sich sowohl für einzelne Rechner als auch für große Rechnerverbünde.Puppet ist in der Programmiersprache Ruby geschrieben.Der Systemverwalter legt über Templates deklarativ den gewünschten Zustand eines Subsystems fest, den Puppet dann beim Ablauf umsetzt.Puppet existiert seit 2005 und wird von der Firma Puppet Labs entwickelt, die zu diesem Zweck gegründet wurde.Hauptentwickler ist und war von Beginn an Luke Kanies.Puppet ist freie Software und steht seit Version 2.7.0 unter der Apache License 2.0, davor unter der GPL-Lizenz.Puppet arbeitet als Client-Server-System mit einer REST-API.Prinzipiell ist Puppet betriebssystemunabhängig, es läuft bisher allerdings vorwiegend auf Unix-artigen Systemen wie Linux, Unix oder BSD.Viele Organisationen, Firmen, Schulen und Universitäten verwenden Puppet, um die Konfiguration ihrer Server zu verwalten, darunter die Wikimedia Foundation, Google, Sun/Oracle, die Stanford University und die Harvard Law School.Die Mailing-Liste zu Puppet hat im Januar 2013 mehr als 5.000 Mitglieder.Ende Januar 2013 gab die Firma Puppet Labs bekannt, dass VMware im Rahmen einer strategischen Partnerschaft 30 Millionen US-Dollar in die Weiterentwicklung von Puppet investiert.</dbpedia-owl:abstract>
+    <dbpedia-owl:abstract xml:lang="pl">Puppet - menadżer konfiguracji serwerów. Tworzony przez firmę Puppet Labs od 2005, którą założył Luke Kanies. Jest rozwijany jako Wolne Oprogramowanie na licencji Apache, a przed wersją 2.7.0 na licencji GNU GPL.</dbpedia-owl:abstract>
+    <dbpedia-owl:abstract xml:lang="fr">Puppet est un logiciel libre permettant la gestion de la configuration de serveurs esclaves (Linux, Mac OS X et Windows).Puppet est écrit à l&#39;aide du langage de programmation Ruby et est diffusé sous licence Apache 2.0 pour les versions récentes de Puppet. Les versions plus anciennes (inférieures à la V2.7.0), sont sous licence GPL.La version libre permet de gérer les déploiements système et applicatif, et accepte les machines virtuelles type Amazon EC2.La version commerciale de Puppet permet en plus, de gérer les machines virtuelles VMware, d&#39;avoir une interface graphique de gestion, d&#39;automatiser et d&#39;orchestrer les déploiements, d&#39;avoir une plateforme de développement pour tous les environnements, de gérer individuellement les droits utilisateurs.Pour utiliser plus facilement Puppet, il est conseillé d&#39;utiliser Geppetto, qui permet d&#39;éviter des soucis de syntaxe.</dbpedia-owl:abstract>
+    <dbpedia-owl:abstract xml:lang="en">Puppet is an open source configuration management tool. It is multi-platform in that it works on many Unix-like systems as well as on Microsoft Windows, and includes its own declarative language to describe system configuration.</dbpedia-owl:abstract>
+    <dbpedia-owl:abstract xml:lang="ja">Puppet は オープンソースの構成管理ツールである。Rubyで書かれており2.7.0まではGPL、それ以降はAPLライセンスとなっている。Puppet及びPuppet LabsはLuke Kaniesにより2005年に創設された。</dbpedia-owl:abstract>
+    <foaf:name xml:lang="en">Puppet</foaf:name>
+    <dbpedia-owl:developer rdf:resource="http://dbpedia.org/resource/Puppet_Labs" />
+    <dbpedia-owl:genre rdf:resource="http://dbpedia.org/resource/Configuration_management" />
+    <dbpedia-owl:license rdf:resource="http://dbpedia.org/resource/GNU_General_Public_License" />
+    <dbpedia-owl:license rdf:resource="http://dbpedia.org/resource/Apache_License" />
+    <dbpedia-owl:operatingSystem rdf:resource="http://dbpedia.org/resource/Unix-like" />
+    <dbpedia-owl:operatingSystem rdf:resource="http://dbpedia.org/resource/Microsoft_Windows" />
+    <dbpedia-owl:operatingSystem rdf:resource="http://dbpedia.org/resource/Linux" />
+    <dbpedia-owl:programmingLanguage rdf:resource="http://dbpedia.org/resource/Ruby_(programming_language)" />
+    <prov:wasDerivedFrom rdf:resource="http://en.wikipedia.org/wiki/Puppet_(software)?oldid=604431670" />
+    <rdfs:comment xml:lang="ru">Puppet (англ. марионетка) — кроссплатформенное клиент-серверное приложение, которое позволяет централизованно управлять конфигурацией операционных систем и программ, установленных на нескольких компьютерах.</rdfs:comment>
+    <rdfs:comment xml:lang="es">Puppet es una herramienta de gestión de la configuración de código abierto. Está escrito en Ruby y fue liberado bajo la Licencia Pública General de GNU (GPL) hasta la versión 2.7.0 y después bajo la licencia Apache 2.0. Puppet Labs y Puppet fueron fundados por Luke Kanies en el 2005.</rdfs:comment>
+    <rdfs:comment xml:lang="ja">Puppet は オープンソースの構成管理ツールである。Rubyで書かれており2.7.0まではGPL、それ以降はAPLライセンスとなっている。Puppet及びPuppet LabsはLuke Kaniesにより2005年に創設された。</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Puppet est un logiciel libre permettant la gestion de la configuration de serveurs esclaves (Linux, Mac OS X et Windows).Puppet est écrit à l&#39;aide du langage de programmation Ruby et est diffusé sous licence Apache 2.0 pour les versions récentes de Puppet.</rdfs:comment>
+    <rdfs:comment xml:lang="pl">Puppet - menadżer konfiguracji serwerów. Tworzony przez firmę Puppet Labs od 2005, którą założył Luke Kanies. Jest rozwijany jako Wolne Oprogramowanie na licencji Apache, a przed wersją 2.7.0 na licencji GNU GPL.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Puppet is an open source configuration management tool. It is multi-platform in that it works on many Unix-like systems as well as on Microsoft Windows, and includes its own declarative language to describe system configuration.</rdfs:comment>
+    <rdfs:comment xml:lang="de">Puppet ist ein Tool zum Konfigurationsmanagement von Computern mit Betriebssystemen wie Unix, Linux und FreeBSD.Ein IT-Administrator kann damit an zentraler Stelle die Konfiguration von Rechnern in seinem Netzwerk verwalten.Puppet eignet sich sowohl für einzelne Rechner als auch für große Rechnerverbünde.Puppet ist in der Programmiersprache Ruby geschrieben.Der Systemverwalter legt über Templates deklarativ den gewünschten Zustand eines Subsystems fest, den Puppet dann beim Ablauf umsetzt.Puppet existiert seit 2005 und wird von der Firma Puppet Labs entwickelt, die zu diesem Zweck gegründet wurde.Hauptentwickler ist und war von Beginn an Luke Kanies.Puppet ist freie Software und steht seit Version 2.7.0 unter der Apache License 2.0, davor unter der GPL-Lizenz.Puppet arbeitet als Client-Server-System mit einer REST-API.Prinzipiell ist Puppet betriebssystemunabhängig, es läuft bisher allerdings vorwiegend auf Unix-artigen Systemen wie Linux, Unix oder BSD.Viele Organisationen, Firmen, Schulen und Universitäten verwenden Puppet, um die Konfiguration ihrer Server zu verwalten, darunter die Wikimedia Foundation, Google, Sun/Oracle, die Stanford University und die Harvard Law School.Die Mailing-Liste zu Puppet hat im Januar 2013 mehr als 5.000 Mitglieder.Ende Januar 2013 gab die Firma Puppet Labs bekannt, dass VMware im Rahmen einer strategischen Partnerschaft 30 Millionen US-Dollar in die Weiterentwicklung von Puppet investiert.</rdfs:comment>
+    <dbpedia-owl:wikiPageID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14432911</dbpedia-owl:wikiPageID>
+    <dbpedia-owl:wikiPageRevisionID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">604431670</dbpedia-owl:wikiPageRevisionID>
+    <foaf:isPrimaryTopicOf rdf:resource="http://en.wikipedia.org/wiki/Puppet_(software)" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Windows_PowerShell">
+    <dbpprop:influencedBy rdf:resource="http://dbpedia.org/resource/Puppet_(software)" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://fr.dbpedia.org/resource/Puppet">
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Puppet_(software)" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://de.dbpedia.org/resource/Puppet_(Software)">
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Puppet_(software)" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wikidata.dbpedia.org/resource/Q2095962">
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Puppet_(software)" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://es.dbpedia.org/resource/Puppet_(software)">
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Puppet_(software)" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ja.dbpedia.org/resource/Puppet_(ソフトウェア)">
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Puppet_(software)" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Puppet_Labs">
+    <dbpedia-owl:product rdf:resource="http://dbpedia.org/resource/Puppet_(software)" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Puppet_(tool)">
+    <dbpedia-owl:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Puppet_(software)" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Puppet_Enterprise">
+    <dbpedia-owl:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Puppet_(software)" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Puppet_software">
+    <dbpedia-owl:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Puppet_(software)" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://en.wikipedia.org/wiki/Puppet_(software)">
+    <foaf:primaryTopic rdf:resource="http://dbpedia.org/resource/Puppet_(software)" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ru.dbpedia.org/resource/Puppet">
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Puppet_(software)" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://simple.dbpedia.org/resource/Puppet_(software)">
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Puppet_(software)" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://uk.dbpedia.org/resource/Puppet">
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Puppet_(software)" />
+  </rdf:Description>
+</rdf:RDF>
