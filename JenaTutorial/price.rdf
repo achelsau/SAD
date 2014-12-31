@@ -1,0 +1,15 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:un="http://www.schemas.org/Units/">
+	<rdf:Description rdf:about="urn:ISBN:0-201-00023-7">
+		<un:price rdf:parseType="Resource">
+			<rdf:value>33.00</rdf:value>
+			<un:units rdf:resource="http://www.schemas.org/Units/USdollar"/>
+		</un:price>
+	</rdf:Description>
+	<rdf:Description rdf:about="urn:ISBN:0-201-00023-8">
+		<un:price rdf:parseType="Resource">
+			<rdf:value>39.00</rdf:value>
+			<un:units rdf:resource="http://www.schemas.org/Units/USdollar"/>
+		</un:price>
+	</rdf:Description>
+</rdf:RDF>

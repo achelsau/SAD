@@ -11,7 +11,6 @@ public class OS {
 	public String name, version, architecture;
 
 	public OS(String name, String version, String architecture) {
-		super();
 		this.name = name;
 		this.version = version;
 		this.architecture = architecture;
