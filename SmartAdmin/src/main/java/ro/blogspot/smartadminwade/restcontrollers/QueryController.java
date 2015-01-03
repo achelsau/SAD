@@ -8,18 +8,14 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import ro.blogspot.smartadminwade.model.RDFResource;
 
-/**
- * @author Ariel
- *
- */
 @Controller
-@RequestMapping("/oses")
-public class OSController {
-	
+@RequestMapping("/query")
+public class QueryController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	@ResponseBody
-	public RDFResource getListOfAvailableOSes(ModelMap model) {
-		
-		return null; // new Resource("Windows", "7", "x64");
+	public RDFResource query(ModelMap model) {
+
+		return null;
 	}
+
 }

@@ -1,0 +1,35 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:sad="http://smartadminwade.blogspot.ro/"
+    xmlns:dbpedia="http://dbpedia.org/resource/" > 
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Apache_Maven">
+    <sad:DependsOn rdf:resource="http://smartadminwade.blogspot.ro/JDK7_Windows_x64"/>
+    <sad:Version>3.2</sad:Version>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://smartadminwade.blogspot.ro/WebDevBasic">
+    <sad:DependsOn rdf:resource="http://dbpedia.org/resource/M2Eclipse"/>
+    <sad:DependsOn rdf:resource="http://dbpedia.org/resource/Apache_Maven"/>
+    <sad:DependsOn rdf:resource="http://dbpedia.org/resource/Apache_Tomcat"/>
+    <sad:DependsOn rdf:resource="http://smartadminwade.blogspot.ro/JDK7_Windows_x64"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Eclipse_(software)">
+    <sad:DependsOn rdf:resource="http://smartadminwade.blogspot.ro/JDK7_Windows_x64"/>
+    <sad:Architecture rdf:resource="http://dbpedia.org/resource/64-bit_computing"/>
+    <sad:Version>4.5.0</sad:Version>
+    <dbpedia:Operating_system rdf:resource="http://dbpedia.org/resource/Microsoft_Windows"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/M2Eclipse">
+    <sad:DependsOn rdf:resource="http://dbpedia.org/resource/Eclipse_(software)"/>
+    <sad:DependsOn rdf:resource="http://dbpedia.org/resource/Apache_Maven"/>
+    <sad:Version>1.5</sad:Version>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://smartadminwade.blogspot.ro/JDK7_Windows_x64">
+    <sad:Architecture rdf:resource="http://dbpedia.org/resource/64-bit_computing"/>
+    <dbpedia:Operating_system rdf:resource="http://dbpedia.org/resource/Microsoft_Windows"/>
+    <sad:Version rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7</sad:Version>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Apache_Tomcat">
+    <sad:DependsOn rdf:resource="http://smartadminwade.blogspot.ro/JDK7_Windows_x64"/>
+    <sad:Version>7</sad:Version>
+  </rdf:Description>
+</rdf:RDF>
