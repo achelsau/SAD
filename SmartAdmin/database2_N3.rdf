@@ -1,0 +1,67 @@
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix sad:   <http://smartadminwade.blogspot.ro/sad#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap:  <http://usefulinc.com/ns/doap#> .
+
+sad:    a               owl:Ontology ;
+        dc:description  "The Description of a dependency graph." ;
+        dc:title        "Description of a dependency graph" ;
+        owl:imports     foaf:index.rdf ;
+        foaf:maker      [ a          foaf:Person ;
+                          foaf:name  "Ariel Chelsau"
+                        ] .
+
+sad:Software  a           rdfs:Class ;
+        rdfs:isDefinedBy  sad: ;
+        rdfs:label        "Generic software package to be installed"@en .
+		
+sad:DependsOn  a          rdf:Property ;
+        rdfs:domain       sad:Software ;
+        rdfs:isDefinedBy  sad: ;
+        rdfs:label        "Depends On relationship"@en ;
+        rdfs:range        sad:SoftwareApplication .
+		
+sad:SoftwareEnvironment
+        a                 rdfs:Class ;
+        rdfs:isDefinedBy  sad: ;
+        rdfs:label        "Environment composed of several software packages working in conjunction"@en ;
+        rdfs:subClassOf   sad:Software .
+
+sad:SoftwareApplication
+        a                 rdfs:Class ;
+        rdfs:isDefinedBy  sad: ;
+        rdfs:label        "Software package to be installed"@en ;
+        rdfs:subClassOf   sad:Software .
+
+dbpedia:Apache_Maven  a  sad:SoftwareApplication ;
+        sad:DependsOn  sad:JDK7_Windows_x64 ;
+        doap:Version   "3.2" .
+
+dbpedia:M2Eclipse  a   sad:SoftwareApplication ;
+        sad:DependsOn  dbpedia:Apache_Maven , <http://dbpedia.org/resource/Eclipse_(software)> ;
+        doap:Version   "1.5" .
+
+sad:WebDevBasic  a     sad:SoftwareEnvironment ;
+        sad:DependsOn  sad:JDK7_Windows_x64 , dbpedia:Apache_Tomcat , dbpedia:Apache_Maven , dbpedia:M2Eclipse .
+
+sad:JDK7_Windows_x64  a           sad:SoftwareApplication ;
+        dbpedia:Operating_system  dbpedia:Microsoft_Windows ;
+        sad:Architecture          dbpedia:64-bit_computing ;
+        doap:Version              "7"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+
+dbpedia:Eclipse_software
+        a                         sad:SoftwareApplication ;
+        dbpedia:Operating_system  dbpedia:Microsoft_Windows ;
+        sad:Architecture          dbpedia:64-bit_computing ;
+        sad:DependsOn             sad:JDK7_Windows_x64 ;
+        doap:Version              "4.5.0" .
+
+dbpedia:Apache_Tomcat
+        a              sad:SoftwareApplication ;
+        sad:DependsOn  sad:JDK7_Windows_x64 ;
+        doap:Version   "7" .
+

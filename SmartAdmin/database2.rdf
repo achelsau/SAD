@@ -1,25 +1,64 @@
 <rdf:RDF
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:j.0="http://dbpedia.org/resource/Plug-in_(computing)"
-    xmlns:sad="http://smartadminwade.blogspot.ro/"
+    xmlns:sad="http://smartadminwade.blogspot.ro/sad#"
     xmlns:doap="http://usefulinc.com/ns/doap#"
     xmlns:dbpedia="http://dbpedia.org/resource/"
-    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"> 
+	
+   <!-- Ontology -->
+  <owl:Ontology rdf:about="http://smartadminwade.blogspot.ro/sad#">
+	<owl:imports rdf:resource="http://xmlns.com/foaf/0.1/index.rdf" />
+
+		<dc:title>Description of a dependency graph</dc:title>
+		<dc:description>The Description of a dependency graph.</dc:description>
+
+		<foaf:maker>
+			<foaf:Person>
+				<foaf:name>Ariel Chelsau</foaf:name>
+			</foaf:Person>
+		</foaf:maker>
+
+    </owl:Ontology> 
+	
+	<!-- Classes -->
+	
+	<rdfs:Class rdf:about="http://smartadminwade.blogspot.ro/sad#Software">
+		<rdfs:isDefinedBy rdf:resource="http://smartadminwade.blogspot.ro/sad#" />
+		<rdfs:label xml:lang="en">Generic software package to be installed</rdfs:label>
+	</rdfs:Class>
+	
+	<rdfs:Class rdf:about="http://smartadminwade.blogspot.ro/sad#SoftwareApplication">
+		<rdfs:isDefinedBy rdf:resource="http://smartadminwade.blogspot.ro/sad#" />
+		<rdfs:label xml:lang="en">Software package to be installed</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://smartadminwade.blogspot.ro/sad#Software" />
+	</rdfs:Class>
+	
+	<rdfs:Class rdf:about="http://smartadminwade.blogspot.ro/sad#SoftwareEnvironment">
+		<rdfs:isDefinedBy rdf:resource="http://smartadminwade.blogspot.ro/sad#" />
+		<rdfs:label xml:lang="en">Environment composed of several software packages working in conjunction</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://smartadminwade.blogspot.ro/sad#Software" />
+	</rdfs:Class>
+	
+	<!-- Properties -->
+	<rdf:Property rdf:about="http://smartadminwade.blogspot.ro/sad#DependsOn">
+		<rdfs:isDefinedBy rdf:resource="http://smartadminwade.blogspot.ro/sad#" />
+		<rdfs:label xml:lang="en">Depends On relationship</rdfs:label>
+		<rdfs:domain rdf:resource="http://smartadminwade.blogspot.ro/sad#Software" />
+		<rdfs:range rdf:resource="http://smartadminwade.blogspot.ro/sad#SoftwareApplication" />
+	</rdf:Property>
+	
+   <!-- Instances -->
   <rdf:Description rdf:about="http://dbpedia.org/resource/Apache_Maven">
-    <rdf:type rdf:resource="http://dbpedia.org/resource/Software"/>
-    <sad:DependsOn rdf:resource="http://smartadminwade.blogspot.ro/JDK7_Windows_x64"/>
+    <rdf:type rdf:resource="http://smartadminwade.blogspot.ro/sad#SoftwareApplication"/>
+    <sad:DependsOn rdf:resource="http://smartadminwade.blogspot.ro/sad#JDK7_Windows_x64"/>
     <doap:Version>3.2</doap:Version>
   </rdf:Description>
-  <rdf:Description rdf:about="http://smartadminwade.blogspot.ro/WebDevBasic">
-    <sad:DependsOn rdf:resource="http://dbpedia.org/resource/M2Eclipse"/>
-    <sad:DependsOn rdf:resource="http://dbpedia.org/resource/Apache_Maven"/>
-    <sad:DependsOn rdf:resource="http://dbpedia.org/resource/Apache_Tomcat"/>
-    <sad:DependsOn rdf:resource="http://smartadminwade.blogspot.ro/JDK7_Windows_x64"/>
-    <rdf:type rdf:resource="http://dbpedia.org/resource/Software"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://dbpedia.org/resource/Eclipse_(software)">
-    <rdf:type rdf:resource="http://dbpedia.org/resource/Software"/>
-    <sad:DependsOn rdf:resource="http://smartadminwade.blogspot.ro/JDK7_Windows_x64"/>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Eclipse_software">
+    <rdf:type rdf:resource="http://smartadminwade.blogspot.ro/sad#SoftwareApplication"/>
+    <sad:DependsOn rdf:resource="http://smartadminwade.blogspot.ro/sad#JDK7_Windows_x64"/>
     <sad:Architecture rdf:resource="http://dbpedia.org/resource/64-bit_computing"/>
     <doap:Version>4.5.0</doap:Version>
     <dbpedia:Operating_system rdf:resource="http://dbpedia.org/resource/Microsoft_Windows"/>
@@ -27,18 +66,25 @@
   <rdf:Description rdf:about="http://dbpedia.org/resource/M2Eclipse">
     <sad:DependsOn rdf:resource="http://dbpedia.org/resource/Eclipse_(software)"/>
     <sad:DependsOn rdf:resource="http://dbpedia.org/resource/Apache_Maven"/>
-    <rdf:type rdf:resource="http://dbpedia.org/resource/Plug-in_(computing)"/>
+	<rdf:type rdf:resource="http://smartadminwade.blogspot.ro/sad#SoftwareApplication"/>
     <doap:Version>1.5</doap:Version>
   </rdf:Description>
-  <rdf:Description rdf:about="http://smartadminwade.blogspot.ro/JDK7_Windows_x64">
-    <rdf:type rdf:resource="http://dbpedia.org/resource/Software"/>
+  <rdf:Description rdf:about="http://smartadminwade.blogspot.ro/sad#WebDevBasic">
+    <sad:DependsOn rdf:resource="http://dbpedia.org/resource/M2Eclipse"/>
+    <sad:DependsOn rdf:resource="http://dbpedia.org/resource/Apache_Maven"/>
+    <sad:DependsOn rdf:resource="http://dbpedia.org/resource/Apache_Tomcat"/>
+    <sad:DependsOn rdf:resource="http://smartadminwade.blogspot.ro/sad#JDK7_Windows_x64"/>
+    <rdf:type rdf:resource="http://smartadminwade.blogspot.ro/sad#SoftwareEnvironment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Apache_Tomcat">
+    <rdf:type rdf:resource="http://smartadminwade.blogspot.ro/sad#SoftwareApplication"/>
+    <sad:DependsOn rdf:resource="http://smartadminwade.blogspot.ro/sad#JDK7_Windows_x64"/>
+    <doap:Version>7</doap:Version>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://smartadminwade.blogspot.ro/sad#JDK7_Windows_x64">
+    <rdf:type rdf:resource="http://smartadminwade.blogspot.ro/sad#SoftwareApplication"/>
     <sad:Architecture rdf:resource="http://dbpedia.org/resource/64-bit_computing"/>
     <dbpedia:Operating_system rdf:resource="http://dbpedia.org/resource/Microsoft_Windows"/>
     <doap:Version rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7</doap:Version>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://dbpedia.org/resource/Apache_Tomcat">
-    <rdf:type rdf:resource="http://dbpedia.org/resource/Software"/>
-    <sad:DependsOn rdf:resource="http://smartadminwade.blogspot.ro/JDK7_Windows_x64"/>
-    <doap:Version>7</doap:Version>
   </rdf:Description>
 </rdf:RDF>
