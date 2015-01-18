@@ -1,0 +1,238 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY dbpedia "http://dbpedia.org/resource/" >
+    <!ENTITY doap "http://usefulinc.com/ns/doap#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY sad "http://smartadminwade.blogspot.ro/sad#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://smartadminwade.blogspot.ro/sad#"
+     xml:base="http://smartadminwade.blogspot.ro/sad"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:sad="http://smartadminwade.blogspot.ro/sad#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:dbpedia="http://dbpedia.org/resource/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:doap="http://usefulinc.com/ns/doap#">
+    <owl:Ontology rdf:about="http://smartadminwade.blogspot.ro/sad#">
+        <dc:description>The Description of a dependency graph.</dc:description>
+        <dc:title>Description of a dependency graph</dc:title>
+        <owl:imports rdf:resource="&foaf;index.rdf"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/resource/Operating_system -->
+
+    <owl:AnnotationProperty rdf:about="&dbpedia;Operating_system"/>
+    
+
+
+    <!-- http://smartadminwade.blogspot.ro/sad#Architecture -->
+
+    <owl:AnnotationProperty rdf:about="&sad;Architecture"/>
+    
+
+
+    <!-- http://usefulinc.com/ns/doap#Version -->
+
+    <owl:AnnotationProperty rdf:about="&doap;Version"/>
+    
+
+
+    <!-- http://usefulinc.com/ns/doap#license -->
+
+    <owl:AnnotationProperty rdf:about="&doap;license"/>
+    
+
+
+    <!-- http://usefulinc.com/ns/doap#release -->
+
+    <owl:AnnotationProperty rdf:about="&doap;release"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://smartadminwade.blogspot.ro/sad#dependsOn -->
+
+    <owl:ObjectProperty rdf:about="&sad;dependsOn">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:label xml:lang="en">Depends On relationship</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://smartadminwade.blogspot.ro/sad#"/>
+        <rdfs:range rdf:resource="&sad;Software"/>
+        <rdfs:domain rdf:resource="&sad;Software"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://smartadminwade.blogspot.ro/sad#Administrator -->
+
+    <owl:Class rdf:about="&sad;Administrator">
+        <rdfs:subClassOf rdf:resource="&foaf;Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://smartadminwade.blogspot.ro/sad#Software -->
+
+    <owl:Class rdf:about="&sad;Software">
+        <rdfs:label xml:lang="en">Generic Software Package</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <rdfs:isDefinedBy rdf:resource="http://smartadminwade.blogspot.ro/sad#"/>
+    </owl:Class>
+    
+
+
+    <!-- http://smartadminwade.blogspot.ro/sad#SoftwareApplication -->
+
+    <owl:Class rdf:about="&sad;SoftwareApplication">
+        <rdfs:label xml:lang="en">Software application</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&sad;Software"/>
+        <rdfs:isDefinedBy rdf:resource="http://smartadminwade.blogspot.ro/sad#"/>
+    </owl:Class>
+    
+
+
+    <!-- http://smartadminwade.blogspot.ro/sad#SoftwareEnvironment -->
+
+    <owl:Class rdf:about="&sad;SoftwareEnvironment">
+        <rdfs:label xml:lang="en">Several software applications</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&sad;Software"/>
+        <rdfs:isDefinedBy rdf:resource="http://smartadminwade.blogspot.ro/sad#"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/resource/Apache_Maven -->
+
+    <owl:NamedIndividual rdf:about="&dbpedia;Apache_Maven">
+        <rdf:type rdf:resource="&sad;SoftwareApplication"/>
+        <doap:Version>3.2</doap:Version>
+        <doap:release>2014-12-20</doap:release>
+        <dependsOn rdf:resource="&sad;JDK7_Windows_x64"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Apache_Tomcat -->
+
+    <owl:NamedIndividual rdf:about="&dbpedia;Apache_Tomcat">
+        <rdf:type rdf:resource="&sad;SoftwareApplication"/>
+        <doap:Version>7</doap:Version>
+        <doap:release>2014-11-02</doap:release>
+        <dependsOn rdf:resource="&sad;JDK7_Windows_x64"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Eclipse_software -->
+
+    <owl:NamedIndividual rdf:about="&dbpedia;Eclipse_software">
+        <rdf:type rdf:resource="&sad;SoftwareApplication"/>
+        <doap:Version>4.5.0</doap:Version>
+        <doap:release>2014-10-10</doap:release>
+        <Architecture rdf:resource="&dbpedia;64-bit_computing"/>
+        <dbpedia:Operating_system rdf:resource="&dbpedia;Microsoft_Windows"/>
+        <dependsOn rdf:resource="&sad;JDK7_Windows_x64"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/M2Eclipse -->
+
+    <owl:NamedIndividual rdf:about="&dbpedia;M2Eclipse">
+        <rdf:type rdf:resource="&sad;SoftwareApplication"/>
+        <doap:license>http://usefulinc.com/doap/licenses/gpl</doap:license>
+        <doap:release>2014-11-22</doap:release>
+        <doap:Version>1.5</doap:Version>
+        <dependsOn rdf:resource="&dbpedia;Apache_Maven"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://smartadminwade.blogspot.ro/sad#JDK7_Windows_x64 -->
+
+    <owl:NamedIndividual rdf:about="&sad;JDK7_Windows_x64">
+        <rdf:type rdf:resource="&sad;SoftwareApplication"/>
+        <doap:Version rdf:datatype="&xsd;decimal">7</doap:Version>
+        <doap:license>http://usefulinc.com/doap/licenses/Sun_license</doap:license>
+        <doap:release>2013-12-20</doap:release>
+        <Architecture rdf:resource="&dbpedia;64-bit_computing"/>
+        <dbpedia:Operating_system rdf:resource="&dbpedia;Microsoft_Windows"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://smartadminwade.blogspot.ro/sad#WebDevBasic -->
+
+    <owl:NamedIndividual rdf:about="&sad;WebDevBasic">
+        <rdf:type rdf:resource="&sad;SoftwareEnvironment"/>
+        <dependsOn rdf:resource="&dbpedia;Apache_Maven"/>
+        <dependsOn rdf:resource="&dbpedia;Apache_Tomcat"/>
+        <dependsOn rdf:resource="&dbpedia;M2Eclipse"/>
+        <dependsOn rdf:resource="&sad;JDK7_Windows_x64"/>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="&foaf;Person"/>
+        <foaf:name>Ariel Chelsau</foaf:name>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
