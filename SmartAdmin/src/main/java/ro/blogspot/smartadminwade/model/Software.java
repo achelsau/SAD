@@ -11,7 +11,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 public class Software {
 	private ResourceType type;
-	private String name, version, os, osVersion, osArchitecture, license;
+	private String name, version, os, osVersion, osArchitecture, license, userFriendlyName;
 	private Set<Software> dependsOn;
 
 	public Software() {
@@ -84,6 +84,14 @@ public class Software {
 		this.license = license;
 	}
 
+	public String getUserFriendlyName() {
+		return userFriendlyName;
+	}
+
+	public void setUserFriendlyName(String userFriendlyName) {
+		this.userFriendlyName = userFriendlyName;
+	}
+
 	public Set<Software> getDependsOn() {
 		return dependsOn;
 	}
@@ -152,7 +160,7 @@ public class Software {
 
 	@Override
 	public String toString() {
-		return "RDFResource [name=" + name + ", dependsOn=" + dependsOn + "]";
+		return "Software [name=" + name + ", dependsOn=" + dependsOn + "]";
 	}
 	
 }

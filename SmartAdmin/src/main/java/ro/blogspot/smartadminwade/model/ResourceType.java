@@ -7,7 +7,7 @@ package ro.blogspot.smartadminwade.model;
  *
  */
 public enum ResourceType {
-	SOFTWARE_APPLICATION,
-	
-	SOFTWARE_ENVIRONMENT
+	SoftwareApplication,
+
+	SoftwareEnvironment
 }

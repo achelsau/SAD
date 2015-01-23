@@ -19,7 +19,7 @@ public class DataAccessService {
 
 	@PostConstruct
 	public void readRDFData() {
-		readRDFData("database.rdf");
+		readRDFData("database_N3.rdf");
 	}
 
 	public void readRDFData(String inputFileName) {

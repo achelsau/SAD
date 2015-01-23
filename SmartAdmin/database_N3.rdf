@@ -56,6 +56,12 @@
     
 
 
+    <!-- http://smartadminwade.blogspot.ro/sad#UserFriendlyName -->
+
+    <owl:AnnotationProperty rdf:about="&sad;UserFriendlyName"/>
+    
+
+
     <!-- http://usefulinc.com/ns/doap#Version -->
 
     <owl:AnnotationProperty rdf:about="&doap;Version"/>
@@ -141,6 +147,7 @@
     <owl:Class rdf:about="&sad;SoftwareEnvironment">
         <rdfs:label xml:lang="en">Several software applications</rdfs:label>
         <rdfs:subClassOf rdf:resource="&sad;Software"/>
+        <Architecture rdf:resource="&dbpedia;64-bit_computing"/>
         <rdfs:isDefinedBy rdf:resource="http://smartadminwade.blogspot.ro/sad#"/>
     </owl:Class>
     
@@ -157,78 +164,196 @@
     
 
 
-    <!-- http://dbpedia.org/resource/Apache_Maven -->
+    <!-- http://dbpedia.org/resource/Apache_Maven_3.2_Windows_x64 -->
 
-    <owl:NamedIndividual rdf:about="&dbpedia;Apache_Maven">
+    <owl:NamedIndividual rdf:about="&dbpedia;Apache_Maven_3.2_Windows_x64">
         <rdf:type rdf:resource="&sad;SoftwareApplication"/>
-        <doap:Version>3.2</doap:Version>
         <doap:release>2014-12-20</doap:release>
-        <doap:license rdf:resource="&dbpedia;Apache_License"/>
-        <dependsOn rdf:resource="&sad;JDK7_Windows_x64"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://dbpedia.org/resource/Apache_Tomcat -->
-
-    <owl:NamedIndividual rdf:about="&dbpedia;Apache_Tomcat">
-        <rdf:type rdf:resource="&sad;SoftwareApplication"/>
-        <doap:Version>7</doap:Version>
-        <doap:release>2014-11-02</doap:release>
+        <doap:Version>3.2</doap:Version>
+        <UserFriendlyName>Apache Maven</UserFriendlyName>
         <Architecture rdf:resource="&dbpedia;64-bit_computing"/>
         <doap:license rdf:resource="&dbpedia;Apache_License"/>
-        <dependsOn rdf:resource="&sad;JDK7_Windows_x64"/>
+		<dbpedia:Operating_system rdf:resource="&dbpedia;Microsoft_Windows"/>
+        <dependsOn rdf:resource="&sad;JDK_7_Windows_x64"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/Eclipse_software -->
+    <!-- http://dbpedia.org/resource/Apache_Maven_3.2_Windows_x86 -->
 
-    <owl:NamedIndividual rdf:about="&dbpedia;Eclipse_software">
+    <owl:NamedIndividual rdf:about="&dbpedia;Apache_Maven_3.2_Windows_x86">
+        <rdf:type rdf:resource="&sad;SoftwareApplication"/>
+        <doap:Version>3.2</doap:Version>
+        <UserFriendlyName>Apache Maven</UserFriendlyName>
+        <doap:release>2014-12-20</doap:release>
+        <Architecture rdf:resource="&dbpedia;32-bit_computing"/>
+        <doap:license rdf:resource="&dbpedia;Apache_License"/>
+		<dbpedia:Operating_system rdf:resource="&dbpedia;Microsoft_Windows"/>
+        <dependsOn rdf:resource="&sad;JDK_7_Windows_x86"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Apache_Tomcat_7_Windows_x64 -->
+
+    <owl:NamedIndividual rdf:about="&dbpedia;Apache_Tomcat_7_Windows_x64">
+        <rdf:type rdf:resource="&sad;SoftwareApplication"/>
+        <UserFriendlyName>Apache Tomcat</UserFriendlyName>
+        <doap:release>2014-11-02</doap:release>
+        <doap:Version>7</doap:Version>
+        <Architecture rdf:resource="&dbpedia;64-bit_computing"/>
+		<dbpedia:Operating_system rdf:resource="&dbpedia;Microsoft_Windows"/>
+        <doap:license rdf:resource="&dbpedia;Apache_License"/>
+        <dependsOn rdf:resource="&sad;JDK_7_Windows_x64"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Apache_Tomcat_7_Windows_x86 -->
+
+    <owl:NamedIndividual rdf:about="&dbpedia;Apache_Tomcat_7_Windows_x86">
+        <rdf:type rdf:resource="&sad;SoftwareApplication"/>
+        <doap:release>2014-11-02</doap:release>
+        <UserFriendlyName>Apache Tomcat</UserFriendlyName>
+        <doap:Version>7</doap:Version>
+        <Architecture rdf:resource="&dbpedia;32-bit_computing"/>
+		<dbpedia:Operating_system rdf:resource="&dbpedia;Microsoft_Windows"/>
+        <doap:license rdf:resource="&dbpedia;Apache_License"/>
+        <dependsOn rdf:resource="&sad;JDK_7_Windows_x86"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://smartadminwade.blogspot.ro/sad#Basic_Web_Development_Environment_Windows_x64 -->
+
+    <owl:NamedIndividual rdf:about="&sad;Basic_Web_Development_Environment_Windows_x64">
+        <rdf:type rdf:resource="&sad;SoftwareEnvironment"/>
+        <doap:release>2014-01-21</doap:release>
+        <UserFriendlyName>Basic Web Development Environment</UserFriendlyName>
+        <Architecture rdf:resource="&dbpedia;64bit_Architecture"/>
+        <dependsOn rdf:resource="&dbpedia;Apache_Maven_3.2_Windows_x64"/>
+        <dependsOn rdf:resource="&dbpedia;Apache_Tomcat_7_Windows_x64"/>
+        <dbpedia:Operating_system rdf:resource="&dbpedia;Microsoft_Windows"/>
+        <dependsOn rdf:resource="&sad;JDK_7_Windows_x64"/>
+        <dependsOn rdf:resource="&sad;M2Eclipse_1.5_Windows_x64"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://smartadminwade.blogspot.ro/sad#Basic_Web_Development_Environment_Windows_x86 -->
+
+    <owl:NamedIndividual rdf:about="&sad;Basic_Web_Development_Environment_Windows_x86">
+        <rdf:type rdf:resource="&sad;SoftwareEnvironment"/>
+        <doap:release>2014-01-22</doap:release>
+        <UserFriendlyName>Basic Web Development Environment</UserFriendlyName>
+        <Architecture rdf:resource="&dbpedia;32bit_Architecture"/>
+        <dependsOn rdf:resource="&dbpedia;Apache_Maven_3.2_Windows_x86"/>
+        <dependsOn rdf:resource="&dbpedia;Apache_Tomcat_7_Windows_x86"/>
+        <dbpedia:Operating_system rdf:resource="&dbpedia;Microsoft_Windows"/>
+        <dependsOn rdf:resource="&sad;JDK_7_Windows_x86"/>
+        <dependsOn rdf:resource="&sad;M2Eclipse_1.5_Windows_x86"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://smartadminwade.blogspot.ro/sad#Eclipse_4.5.0_Windows_x64 -->
+
+    <owl:NamedIndividual rdf:about="&sad;Eclipse_4.5.0_Windows_x64">
         <rdf:type rdf:resource="&sad;SoftwareApplication"/>
         <doap:Version>4.5.0</doap:Version>
+        <UserFriendlyName>Eclipse</UserFriendlyName>
         <doap:release>2014-10-10</doap:release>
         <Architecture rdf:resource="&dbpedia;64-bit_computing"/>
         <doap:license rdf:resource="&dbpedia;Eclipse_Public_License"/>
         <dbpedia:Operating_system rdf:resource="&dbpedia;Microsoft_Windows"/>
-        <dependsOn rdf:resource="&sad;JDK7_Windows_x64"/>
+        <dependsOn rdf:resource="&sad;JDK_7_Windows_x64"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://dbpedia.org/resource/M2Eclipse -->
+    <!-- http://smartadminwade.blogspot.ro/sad#Eclipse_4.5.0_Windows_x86-->
 
-    <owl:NamedIndividual rdf:about="&dbpedia;M2Eclipse">
+    <owl:NamedIndividual rdf:about="&sad;Eclipse_4.5.0_Windows_x86">
         <rdf:type rdf:resource="&sad;SoftwareApplication"/>
-        <doap:license>http://usefulinc.com/doap/licenses/gpl</doap:license>
-        <doap:release>2014-11-22</doap:release>
-        <doap:Version>1.5</doap:Version>
-        <dependsOn rdf:resource="&dbpedia;Apache_Maven"/>
+        <doap:release>2014-09-10</doap:release>
+        <doap:Version>4.5.0</doap:Version>
+        <UserFriendlyName>Eclipse</UserFriendlyName>
+        <Architecture rdf:resource="&dbpedia;32-bit_computing"/>
+        <doap:license rdf:resource="&dbpedia;Eclipse_Public_License"/>
+        <dbpedia:Operating_system rdf:resource="&dbpedia;Microsoft_Windows"/>
+        <dependsOn rdf:resource="&sad;JDK_7_Windows_x86"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://smartadminwade.blogspot.ro/sad#JDK7_Windows_x64 -->
+    <!-- http://smartadminwade.blogspot.ro/sad#JDK_7_Windows_x64 -->
 
-    <owl:NamedIndividual rdf:about="&sad;JDK7_Windows_x64">
+    <owl:NamedIndividual rdf:about="&sad;JDK_7_Windows_x64">
         <rdf:type rdf:resource="&sad;SoftwareApplication"/>
         <doap:Version rdf:datatype="&xsd;decimal">7</doap:Version>
-        <doap:license>http://usefulinc.com/doap/licenses/Sun_license</doap:license>
         <doap:release>2013-12-20</doap:release>
+        <doap:license>http://usefulinc.com/doap/licenses/Sun_license</doap:license>
+        <UserFriendlyName>JDK</UserFriendlyName>
         <Architecture rdf:resource="&dbpedia;64-bit_computing"/>
         <dbpedia:Operating_system rdf:resource="&dbpedia;Microsoft_Windows"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://smartadminwade.blogspot.ro/sad#WebDevBasic -->
+    <!-- http://smartadminwade.blogspot.ro/sad#JDK_7_Windows_x86 -->
 
-    <owl:NamedIndividual rdf:about="&sad;WebDevBasic">
-        <rdf:type rdf:resource="&sad;SoftwareEnvironment"/>
-        <dependsOn rdf:resource="&dbpedia;Apache_Maven"/>
-        <dependsOn rdf:resource="&dbpedia;Apache_Tomcat"/>
-        <dependsOn rdf:resource="&dbpedia;M2Eclipse"/>
-        <dependsOn rdf:resource="&sad;JDK7_Windows_x64"/>
+    <owl:NamedIndividual rdf:about="&sad;JDK_7_Windows_x86">
+        <rdf:type rdf:resource="&sad;SoftwareApplication"/>
+        <doap:Version rdf:datatype="&xsd;decimal">7</doap:Version>
+        <doap:release>2013-11-20</doap:release>
+        <doap:license>http://usefulinc.com/doap/licenses/Sun_license</doap:license>
+        <UserFriendlyName>JDK</UserFriendlyName>
+        <Architecture rdf:resource="&dbpedia;32-bit_computing"/>
+        <dbpedia:Operating_system rdf:resource="&dbpedia;Microsoft_Windows"/>
+    </owl:NamedIndividual>
+	
+	<!-- http://smartadminwade.blogspot.ro/sad#JDK_7_Windows_x86 -->
+
+    <owl:NamedIndividual rdf:about="&sad;JDK_7_Windows_x86">
+        <rdf:type rdf:resource="&sad;SoftwareApplication"/>
+        <doap:Version rdf:datatype="&xsd;decimal">7</doap:Version>
+        <doap:release>2013-11-20</doap:release>
+        <doap:license>http://usefulinc.com/doap/licenses/Sun_license</doap:license>
+        <UserFriendlyName>JDK</UserFriendlyName>
+        <Architecture rdf:resource="&dbpedia;32-bit_computing"/>
+        <dbpedia:Operating_system rdf:resource="&dbpedia;Microsoft_Windows"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://smartadminwade.blogspot.ro/sad#M2Eclipse_1.5_Windows_x64 -->
+
+    <owl:NamedIndividual rdf:about="&sad;M2Eclipse_1.5_Windows_x64">
+        <rdf:type rdf:resource="&sad;SoftwareApplication"/>
+        <doap:release>2014-11-22</doap:release>
+        <UserFriendlyName>M2Eclipse</UserFriendlyName>
+        <doap:Version>1.5</doap:Version>
+        <doap:license>http://usefulinc.com/doap/licenses/gpl</doap:license>
+        <Architecture rdf:resource="&dbpedia;64-bit_Architecture"/>
+        <dependsOn rdf:resource="&sad;Apache_Maven_3.2_Windows_x64"/>
+        <dependsOn rdf:resource="&sad;Eclipse_4.5.0_Windows_x64"/>
+        <dbpedia:Operating_system rdf:resource="&dbpedia;Microsoft_Windows"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://smartadminwade.blogspot.ro/sad#M2Eclipse_1.5_Windows_x86 -->
+
+    <owl:NamedIndividual rdf:about="&sad;M2Eclipse_1.5_Windows_x86">
+        <rdf:type rdf:resource="&sad;SoftwareApplication"/>
+        <doap:Version>1.5</doap:Version>
+        <doap:release>2014-11-22</doap:release>
+        <UserFriendlyName>M2Eclipse</UserFriendlyName>
+        <doap:license>http://usefulinc.com/doap/licenses/gpl</doap:license>
+        <Architecture rdf:resource="&dbpedia;32-bit_Architecture"/>
+        <dependsOn rdf:resource="&sad;Apache_Maven_3.2_Windows_x86"/>
+        <dependsOn rdf:resource="&sad;Eclipse_4.5.0_Windows_x86"/>
+        <dbpedia:Operating_system rdf:resource="&dbpedia;Microsoft_Windows"/>
     </owl:NamedIndividual>
     <rdf:Description>
         <rdf:type rdf:resource="&foaf;Person"/>

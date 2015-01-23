@@ -27,10 +27,22 @@ public class QueryServiceTest {
 	}
 
 	@Test
+	public void should_return_an_environment() {
+		QueryService queryService = context.getBean(QueryService.class);
+		String webDevBasicEnv = "http://smartadminwade.blogspot.ro/sad#Basic_Web_Development_Environment_Windows_x86";
+
+		Software resource = queryService.getDependencyGraph(webDevBasicEnv);
+
+		Assert.assertNotNull(resource);
+		Assert.assertEquals(resource.getName(), webDevBasicEnv);
+	}
+
+	@Test
 	public void should_return_a_root_node_when_triggering_a_query() {
 		QueryService queryService = context.getBean(QueryService.class);
 
-		Software resource = queryService.getDependencyGraph("http://smartadminwade.blogspot.ro/WebDevBasic");
+		Software resource = queryService
+				.getDependencyGraph("http://smartadminwade.blogspot.ro/sad#M2Eclipse_1.5_Windows_x86");
 
 		Assert.assertNotNull(resource);
 	}

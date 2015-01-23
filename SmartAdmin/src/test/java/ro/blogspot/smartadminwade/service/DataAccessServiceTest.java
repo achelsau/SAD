@@ -18,7 +18,7 @@ public class DataAccessServiceTest {
 	@Test
 	public void should_access_rdf_data() {
 		// execute
-		dataAccessService.readRDFData("database.rdf");
+		dataAccessService.readRDFData("database_N3.rdf");
 
 		// verify
 		Model model = dataAccessService.getModel();

@@ -7,6 +7,7 @@ import java.util.Set;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import ro.blogspot.smartadminwade.model.ResourceType;
 import ro.blogspot.smartadminwade.model.Software;
 import ro.blogspot.smartadminwade.util.SADConstants;
 
@@ -32,15 +33,29 @@ public class QueryService {
 		visited.put(uri, true);
 
 		Statement statement = null;
-		ro.blogspot.smartadminwade.model.Software res = new Software();
-		res.setDependsOn(new HashSet<Software>());
+		Software software = new Software();
+		software.setDependsOn(new HashSet<Software>());
 		while (iterator.hasNext()) {
 			Statement s = iterator.nextStatement();
-			res.setName(s.getSubject().getURI());
-			Set<Software> dependsOn = res.getDependsOn();
+			software.setName(s.getSubject().getURI());
 
-			if (s.getPredicate().hasURI(SADConstants.namespace + "DependsOn")
+			if (s.getPredicate().hasURI(SADConstants.DOAP_NAMESPACE + "license")) {
+				software.setLicense(s.getObject().toString());
+			} else if (s.getPredicate().hasURI(SADConstants.SAD_NAMESPACE + "Architecture")) {
+				software.setOsArchitecture(s.getObject().toString());
+			} else if (s.getPredicate().hasURI(SADConstants.DOAP_NAMESPACE + "Version")) {
+				software.setVersion(s.getObject().toString());
+			} else if (s.getPredicate().hasURI(SADConstants.RDF_NAMESPACE + "type")) {
+				String type = s.getObject().toString();
+				if (type.substring(type.indexOf("#") + 1).equals("NamedIndividual")) {
+					continue;
+				}
+				software.setType(ResourceType.valueOf(type.substring(type.indexOf("#") + 1)));
+			} else if (s.getPredicate().hasURI(SADConstants.SAD_NAMESPACE + "UserFriendlyName")) {
+				software.setUserFriendlyName(s.getObject().toString());
+			} else if (s.getPredicate().hasURI(SADConstants.SAD_NAMESPACE + "dependsOn")
 					&& visited.get(s.getResource().getURI()) == null) {
+				Set<Software> dependsOn = software.getDependsOn();
 				dependsOn.add(depthFirstSearch(s.getResource().getURI(), visited));
 			}
 
@@ -48,7 +63,7 @@ public class QueryService {
 		}
 
 		if (statement != null) {
-			return res;
+			return software;
 		} else {
 			return null;
 		}
