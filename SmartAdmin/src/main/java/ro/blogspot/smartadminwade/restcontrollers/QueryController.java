@@ -6,14 +6,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import ro.blogspot.smartadminwade.model.RDFResource;
+import ro.blogspot.smartadminwade.model.Software;
 
 @Controller
 @RequestMapping("/query")
 public class QueryController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	@ResponseBody
-	public RDFResource query(ModelMap model) {
+	public Software query(ModelMap model) {
 
 		return null;
 	}

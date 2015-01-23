@@ -163,6 +163,7 @@
         <rdf:type rdf:resource="&sad;SoftwareApplication"/>
         <doap:Version>3.2</doap:Version>
         <doap:release>2014-12-20</doap:release>
+        <doap:license rdf:resource="&dbpedia;Apache_License"/>
         <dependsOn rdf:resource="&sad;JDK7_Windows_x64"/>
     </owl:NamedIndividual>
     
@@ -174,6 +175,8 @@
         <rdf:type rdf:resource="&sad;SoftwareApplication"/>
         <doap:Version>7</doap:Version>
         <doap:release>2014-11-02</doap:release>
+        <Architecture rdf:resource="&dbpedia;64-bit_computing"/>
+        <doap:license rdf:resource="&dbpedia;Apache_License"/>
         <dependsOn rdf:resource="&sad;JDK7_Windows_x64"/>
     </owl:NamedIndividual>
     
@@ -186,6 +189,7 @@
         <doap:Version>4.5.0</doap:Version>
         <doap:release>2014-10-10</doap:release>
         <Architecture rdf:resource="&dbpedia;64-bit_computing"/>
+        <doap:license rdf:resource="&dbpedia;Eclipse_Public_License"/>
         <dbpedia:Operating_system rdf:resource="&dbpedia;Microsoft_Windows"/>
         <dependsOn rdf:resource="&sad;JDK7_Windows_x64"/>
     </owl:NamedIndividual>

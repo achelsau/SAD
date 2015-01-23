@@ -4,7 +4,7 @@
     <listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
   </listener>
   <servlet>
-    <servlet-name>applicationContext</servlet-name>
+    <servlet-name>applicationCon</servlet-name>
     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
     <init-param>
       <param-name>contextConfigLocation</param-name>
@@ -13,7 +13,7 @@
     <load-on-startup>1</load-on-startup>
   </servlet>
   <servlet-mapping>
-    <servlet-name>applicationContext</servlet-name>
+    <servlet-name>applicationCon</servlet-name>
     <url-pattern>/sad/*</url-pattern>
   </servlet-mapping>
 </web-app>

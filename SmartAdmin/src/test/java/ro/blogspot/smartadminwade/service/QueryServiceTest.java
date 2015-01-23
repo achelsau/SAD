@@ -8,7 +8,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
-import ro.blogspot.smartadminwade.model.RDFResource;
+import ro.blogspot.smartadminwade.model.Software;
 
 @Configuration
 @ComponentScan(value = "ro.blogspot.smartadminwade.service")
@@ -30,7 +30,7 @@ public class QueryServiceTest {
 	public void should_return_a_root_node_when_triggering_a_query() {
 		QueryService queryService = context.getBean(QueryService.class);
 
-		RDFResource resource = queryService.getDependencyGraph("http://smartadminwade.blogspot.ro/WebDevBasic");
+		Software resource = queryService.getDependencyGraph("http://smartadminwade.blogspot.ro/WebDevBasic");
 
 		Assert.assertNotNull(resource);
 	}

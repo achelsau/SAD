@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import ro.blogspot.smartadminwade.model.RDFResource;
+import ro.blogspot.smartadminwade.model.Software;
 
 /**
  * @author Ariel
@@ -18,7 +18,7 @@ public class OSController {
 	
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	@ResponseBody
-	public RDFResource getListOfAvailableOSes(ModelMap model) {
+	public Software getListOfAvailableOSes(ModelMap model) {
 		
 		return null; // new Resource("Windows", "7", "x64");
 	}

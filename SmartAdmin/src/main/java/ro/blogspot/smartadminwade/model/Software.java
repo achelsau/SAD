@@ -9,16 +9,16 @@ import javax.xml.bind.annotation.XmlRootElement;
  *
  */
 @XmlRootElement
-public class RDFResource {
+public class Software {
 	private ResourceType type;
-	private String name, version, os, osVersion, osArchitecture;
-	private Set<RDFResource> dependsOn;
+	private String name, version, os, osVersion, osArchitecture, license;
+	private Set<Software> dependsOn;
 
-	public RDFResource() {
+	public Software() {
 	}
 
-	public RDFResource(ResourceType type, String name, String version, String os, String osVersion, String osArchitecture,
-			Set<RDFResource> dependsOn) {
+	public Software(ResourceType type, String name, String version, String os, String osVersion, String osArchitecture,
+			Set<Software> dependsOn) {
 		this.type = type;
 		this.name = name;
 		this.version = version;
@@ -76,11 +76,19 @@ public class RDFResource {
 		this.osArchitecture = osArchitecture;
 	}
 
-	public Set<RDFResource> getDependsOn() {
+	public String getLicense() {
+		return license;
+	}
+
+	public void setLicense(String license) {
+		this.license = license;
+	}
+
+	public Set<Software> getDependsOn() {
 		return dependsOn;
 	}
 
-	public void setDependsOn(Set<RDFResource> dependsOn) {
+	public void setDependsOn(Set<Software> dependsOn) {
 		this.dependsOn = dependsOn;
 	}
 
@@ -106,7 +114,7 @@ public class RDFResource {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		RDFResource other = (RDFResource) obj;
+		Software other = (Software) obj;
 		if (dependsOn == null) {
 			if (other.dependsOn != null)
 				return false;
