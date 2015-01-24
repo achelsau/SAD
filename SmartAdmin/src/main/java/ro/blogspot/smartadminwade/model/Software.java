@@ -4,14 +4,19 @@ import java.util.Set;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
+import org.codehaus.jackson.annotate.JsonIgnoreProperties;
+
 /**
  * @author Ariel
  *
  */
 @XmlRootElement
+@JsonIgnoreProperties({ "type", "name", "osVersion" })
 public class Software {
+
 	private SoftwareType type;
-	private String name, version, os, osVersion, osArchitecture, license, userFriendlyName;
+	private String name, version, os, osVersion, osArchitecture, license;
+	private String userFriendlyName;
 	private Set<Software> dependsOn;
 
 	public Software() {

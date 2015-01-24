@@ -161,12 +161,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://dbpedia.org/resource/Apache_Maven_3.2_Windows_x64 -->
-
-    <owl:NamedIndividual rdf:about="&dbpedia;Apache_Maven_3.2_Windows_x64">
+    <owl:NamedIndividual rdf:about="&sad;Apache_Maven_3.2_Windows_x64">
         <rdf:type rdf:resource="&sad;SoftwareApplication"/>
         <doap:release>2014-12-20</doap:release>
         <doap:Version>3.2</doap:Version>
@@ -176,12 +171,9 @@
 		<dbpedia:Operating_system rdf:resource="&dbpedia;Microsoft_Windows"/>
         <dependsOn rdf:resource="&sad;JDK_7_Windows_x64"/>
     </owl:NamedIndividual>
-    
+   
 
-
-    <!-- http://dbpedia.org/resource/Apache_Maven_3.2_Windows_x86 -->
-
-    <owl:NamedIndividual rdf:about="&dbpedia;Apache_Maven_3.2_Windows_x86">
+    <owl:NamedIndividual rdf:about="&sad;Apache_Maven_3.2_Windows_x86">
         <rdf:type rdf:resource="&sad;SoftwareApplication"/>
         <doap:Version>3.2</doap:Version>
         <UserFriendlyName>Apache Maven</UserFriendlyName>
@@ -191,12 +183,8 @@
 		<dbpedia:Operating_system rdf:resource="&dbpedia;Microsoft_Windows"/>
         <dependsOn rdf:resource="&sad;JDK_7_Windows_x86"/>
     </owl:NamedIndividual>
-    
 
-
-    <!-- http://dbpedia.org/resource/Apache_Tomcat_7_Windows_x64 -->
-
-    <owl:NamedIndividual rdf:about="&dbpedia;Apache_Tomcat_7_Windows_x64">
+    <owl:NamedIndividual rdf:about="&sad;Apache_Tomcat_7_Windows_x64">
         <rdf:type rdf:resource="&sad;SoftwareApplication"/>
         <UserFriendlyName>Apache Tomcat</UserFriendlyName>
         <doap:release>2014-11-02</doap:release>
@@ -211,7 +199,7 @@
 
     <!-- http://dbpedia.org/resource/Apache_Tomcat_7_Windows_x86 -->
 
-    <owl:NamedIndividual rdf:about="&dbpedia;Apache_Tomcat_7_Windows_x86">
+    <owl:NamedIndividual rdf:about="&sad;Apache_Tomcat_7_Windows_x86">
         <rdf:type rdf:resource="&sad;SoftwareApplication"/>
         <doap:release>2014-11-02</doap:release>
         <UserFriendlyName>Apache Tomcat</UserFriendlyName>

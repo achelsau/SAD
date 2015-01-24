@@ -13,16 +13,16 @@ import com.hp.hpl.jena.util.FileManager;
 
 @Service
 @Scope("singleton")
-public class DataAccessService {
+public class DataReaderService {
 
 	private Model model;
 
 	@PostConstruct
-	public void readRDFData() {
-		readRDFData("database_N3.rdf");
+	public void readEntities() {
+		readEntities("database_N3.rdf");
 	}
 
-	public void readRDFData(String inputFileName) {
+	public void readEntities(String inputFileName) {
 		// create an empty model
 		model = ModelFactory.createDefaultModel();
 

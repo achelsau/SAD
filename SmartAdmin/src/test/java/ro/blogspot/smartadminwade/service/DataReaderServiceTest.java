@@ -6,22 +6,22 @@ import org.junit.Test;
 
 import com.hp.hpl.jena.rdf.model.Model;
 
-public class DataAccessServiceTest {
-	private DataAccessService dataAccessService;
+public class DataReaderServiceTest {
+	private DataReaderService dataReaderService;
 
 	@Before
 	public void setUp() {
 		// setup
-		dataAccessService = new DataAccessService();
+		dataReaderService = new DataReaderService();
 	}
 
 	@Test
 	public void should_access_rdf_data() {
 		// execute
-		dataAccessService.readRDFData("database_N3.rdf");
+		dataReaderService.readEntities("database_N3.rdf");
 
 		// verify
-		Model model = dataAccessService.getModel();
+		Model model = dataReaderService.getModel();
 		Assert.assertNotNull(model);
 		Assert.assertTrue(model.listSubjects().toList().size() > 0);
 	}
@@ -30,7 +30,7 @@ public class DataAccessServiceTest {
 	public void should_throw_exception_when_file_not_found() {
 		// execute
 		try {
-			dataAccessService.readRDFData("database1.rdf");
+			dataReaderService.readEntities("database1.rdf");
 		} catch (IllegalArgumentException ex) {
 			// verify
 			Assert.assertEquals("File: database1.rdf not found", ex.getMessage());
