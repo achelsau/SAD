@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import ro.blogspot.smartadminwade.model.SoftwareType;
 import ro.blogspot.smartadminwade.model.Software;
 
 /**
@@ -20,6 +21,6 @@ public class OSController {
 	@ResponseBody
 	public Software getListOfAvailableOSes(ModelMap model) {
 		
-		return null; // new Resource("Windows", "7", "x64");
+		return new Software(SoftwareType.SoftwareApplication, "test", "3", "sdsd", "213213", "sdgdf", null);
 	}
 }

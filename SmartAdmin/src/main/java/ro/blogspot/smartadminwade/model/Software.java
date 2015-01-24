@@ -10,14 +10,14 @@ import javax.xml.bind.annotation.XmlRootElement;
  */
 @XmlRootElement
 public class Software {
-	private ResourceType type;
+	private SoftwareType type;
 	private String name, version, os, osVersion, osArchitecture, license, userFriendlyName;
 	private Set<Software> dependsOn;
 
 	public Software() {
 	}
 
-	public Software(ResourceType type, String name, String version, String os, String osVersion, String osArchitecture,
+	public Software(SoftwareType type, String name, String version, String os, String osVersion, String osArchitecture,
 			Set<Software> dependsOn) {
 		this.type = type;
 		this.name = name;
@@ -44,11 +44,11 @@ public class Software {
 		this.version = version;
 	}
 
-	public ResourceType getType() {
+	public SoftwareType getType() {
 		return type;
 	}
 
-	public void setType(ResourceType type) {
+	public void setType(SoftwareType type) {
 		this.type = type;
 	}
 

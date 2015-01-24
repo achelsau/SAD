@@ -6,7 +6,7 @@ package ro.blogspot.smartadminwade.model;
  * @author Ariel
  *
  */
-public enum ResourceType {
+public enum SoftwareType {
 	SoftwareApplication,
 
 	SoftwareEnvironment

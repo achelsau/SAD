@@ -7,7 +7,7 @@ import java.util.Set;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import ro.blogspot.smartadminwade.model.ResourceType;
+import ro.blogspot.smartadminwade.model.SoftwareType;
 import ro.blogspot.smartadminwade.model.Software;
 import ro.blogspot.smartadminwade.util.SADConstants;
 
@@ -50,7 +50,7 @@ public class QueryService {
 				if (type.substring(type.indexOf("#") + 1).equals("NamedIndividual")) {
 					continue;
 				}
-				software.setType(ResourceType.valueOf(type.substring(type.indexOf("#") + 1)));
+				software.setType(SoftwareType.valueOf(type.substring(type.indexOf("#") + 1)));
 			} else if (s.getPredicate().hasURI(SADConstants.SAD_NAMESPACE + "UserFriendlyName")) {
 				software.setUserFriendlyName(s.getObject().toString());
 			} else if (s.getPredicate().hasURI(SADConstants.SAD_NAMESPACE + "dependsOn")
