@@ -31,7 +31,7 @@ public class EntityService {
 		List<Software> environments = getSoftwareEntities(SoftwareType.SoftwareEnvironment);
 		environments.addAll(applications);
 
-		return applications;
+		return environments;
 	}
 
 	public List<Software> getSoftwareEntities(SoftwareType softwareType) {

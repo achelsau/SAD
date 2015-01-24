@@ -5,30 +5,40 @@
 <title>Smart Admin</title>
 <script src="resources/lib/jquery-2.3.0.js"></script>
 <script src="resources/sad.js"></script>
+<link rel="stylesheet" type="text/css" href="resources/style/main.css">
 </head>
 <body>
 	<div id="allContent">
 		<div id="header"></div>
 		<div id="body">
 			<div id="left">
-				<div class="">
-					<select size="1" id="softwareToChoose">
+				<div class="package">
+					<div>
+						Software Package:	
+					</div>
+					<select size="1" id="softwareToChoose" class="dropdown">
 					</select>
 				</div>
-				<div>
-					<select size="1" id="softwareVersion">
+				<div class="package">
+					<div>
+						Version:	
+					</div>
+					<select size="1" id="softwareVersion" class="dropdown">
 					</select>
 				</div>
-				<div>
-					<select size="1" id="operatingSystem">
+				<div class="package">
+					<div>
+						Operating System:	
+					</div>
+					<select size="1" id="operatingSystem" class="dropdown">
 					</select>
 				</div>
-				<div>
-					<select size="1" id="operatingSystemVersion">
-					</select>
-				</div>
-				<div>
-					<select size="1" id="operatingSystemArchitecture">
+				<div class="package">
+					<div>
+						Operating System Architecture:
+					</div>
+					
+					<select size="1" id="operatingSystemArchitecture" class="dropdown">
 					</select>
 				</div>
 			</div>

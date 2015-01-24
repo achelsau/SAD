@@ -62,7 +62,11 @@ public class Software {
 	}
 
 	public void setOs(String os) {
-		this.os = os;
+		if (os.contains("Microsoft_Windows")) {
+			this.os = "Windows";
+		} else {
+			this.os = os;
+		}
 	}
 
 	public String getOsVersion() {
@@ -78,7 +82,13 @@ public class Software {
 	}
 
 	public void setOsArchitecture(String osArchitecture) {
-		this.osArchitecture = osArchitecture;
+		if (osArchitecture.contains("32")) {
+			this.osArchitecture = "x86";
+		} else if (osArchitecture.contains("64")){
+			this.osArchitecture = "x64";
+		} else {
+			this.osArchitecture = osArchitecture;
+		}
 	}
 
 	public String getLicense() {
