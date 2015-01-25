@@ -4,6 +4,7 @@
 <meta charset="ISO-8859-1">
 <title>Smart Admin</title>
 <script src="resources/lib/jquery-2.3.0.js"></script>
+<script src="resources/lib/jquery-ui.js"></script>
 <script src="resources/sad.js"></script>
 <link rel="stylesheet" type="text/css" href="resources/style/main.css">
 </head>
@@ -41,6 +42,16 @@
 					<select size="1" id="operatingSystemArchitecture" class="dropdown">
 					</select>
 				</div>
+				
+				<div class="computeButtonDiv">
+					<button type="button" id="computeDependencies">Compute Dependency Tree</button>
+				</div>
+			</div>
+			<div id="right">
+			</div>
+			
+			<div id="popup">
+			<div id="closeBar"><button type="button" id="closeBtn">X</button></div>
 			</div>
 		</div>
 		<div id="footer"></div>

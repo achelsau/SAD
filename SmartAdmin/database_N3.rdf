@@ -231,8 +231,8 @@
         <doap:release>2014-01-21</doap:release>
         <UserFriendlyName>Basic Web Development Environment</UserFriendlyName>
         <Architecture rdf:resource="&dbpedia;64bit_Architecture"/>
-        <dependsOn rdf:resource="&dbpedia;Apache_Maven_3.2_Windows_x64"/>
-        <dependsOn rdf:resource="&dbpedia;Apache_Tomcat_7_Windows_x64"/>
+        <dependsOn rdf:resource="&sad;Apache_Maven_3.2_Windows_x64"/>
+        <dependsOn rdf:resource="&sad;Apache_Tomcat_7_Windows_x64"/>
         <dbpedia:Operating_system rdf:resource="&dbpedia;Microsoft_Windows"/>
         <dependsOn rdf:resource="&sad;JDK_7_Windows_x64"/>
         <dependsOn rdf:resource="&sad;M2Eclipse_1.5_Windows_x64"/>
@@ -247,8 +247,8 @@
         <doap:release>2014-01-22</doap:release>
         <UserFriendlyName>Basic Web Development Environment</UserFriendlyName>
         <Architecture rdf:resource="&dbpedia;32bit_Architecture"/>
-        <dependsOn rdf:resource="&dbpedia;Apache_Maven_3.2_Windows_x86"/>
-        <dependsOn rdf:resource="&dbpedia;Apache_Tomcat_7_Windows_x86"/>
+        <dependsOn rdf:resource="&sad;Apache_Maven_3.2_Windows_x86"/>
+        <dependsOn rdf:resource="&sad;Apache_Tomcat_7_Windows_x86"/>
         <dbpedia:Operating_system rdf:resource="&dbpedia;Microsoft_Windows"/>
         <dependsOn rdf:resource="&sad;JDK_7_Windows_x86"/>
         <dependsOn rdf:resource="&sad;M2Eclipse_1.5_Windows_x86"/>

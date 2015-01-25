@@ -42,6 +42,9 @@ public class Software {
 	}
 
 	public String getVersion() {
+		if (version == null) {
+			return "none";
+		}
 		return version;
 	}
 
