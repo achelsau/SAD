@@ -15,7 +15,7 @@ import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 public class Software {
 
 	private SoftwareType type;
-	private String name, version, os, osVersion, osArchitecture, license;
+	private String name, version, os, osVersion, osArchitecture, license, link;
 	private String userFriendlyName;
 	private Set<Software> dependsOn;
 
@@ -116,6 +116,14 @@ public class Software {
 
 	public void setDependsOn(Set<Software> dependsOn) {
 		this.dependsOn = dependsOn;
+	}
+
+	public String getLink() {
+		return link;
+	}
+
+	public void setLink(String link) {
+		this.link = link;
 	}
 
 	@Override

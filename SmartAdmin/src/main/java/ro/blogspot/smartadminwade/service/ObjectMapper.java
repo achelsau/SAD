@@ -16,6 +16,8 @@ public class ObjectMapper {
 			software.setOsArchitecture(s.getObject().toString());
 		} else if (s.getPredicate().hasURI(SADConstants.DOAP_NAMESPACE + "Version")) {
 			software.setVersion(s.getObject().toString());
+		} else if (s.getPredicate().hasURI(SADConstants.DOAP_NAMESPACE + "download-page")) {
+			software.setLink(s.getObject().toString());
 		} else if (s.getPredicate().hasURI(SADConstants.DBPEDIA_NAMESPACE + "Operating_system")) {
 			software.setOs(s.getObject().toString());
 		} else if (s.getPredicate().hasURI(SADConstants.RDF_NAMESPACE + "type")) {

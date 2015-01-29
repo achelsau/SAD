@@ -13,6 +13,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 public class SoftwareDescription {
 	private Set<String> versions, operatingSystems, operatingSystemsVersions, architectures;
+	private String license, release, link;
 
 	public SoftwareDescription() {
 		// TODO Auto-generated constructor stub
@@ -56,5 +57,29 @@ public class SoftwareDescription {
 
 	public void setArchitectures(Set<String> architectures) {
 		this.architectures = architectures;
+	}
+
+	public String getLicense() {
+		return license;
+	}
+
+	public void setLicense(String license) {
+		this.license = license;
+	}
+
+	public String getRelease() {
+		return release;
+	}
+
+	public void setRelease(String release) {
+		this.release = release;
+	}
+
+	public String getLink() {
+		return link;
+	}
+
+	public void setLink(String link) {
+		this.link = link;
 	}
 }

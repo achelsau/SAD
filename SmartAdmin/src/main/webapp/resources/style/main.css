@@ -47,8 +47,8 @@
 }
 
 #popup {
-	width: 300px;
-	height: 300px;
+	width: 350px;
+	height: 200px;
 	border: thin black solid;
 	background-color: white;
 	margin-left: auto;
@@ -65,4 +65,8 @@
 	background-color: white;
 	border-color: grey;
 	border-width: 1px;
+}
+
+#description td {
+	padding: 10px;
 }

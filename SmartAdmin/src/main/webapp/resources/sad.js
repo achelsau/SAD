@@ -31,12 +31,23 @@
 		
 		$(".dependencyElement").click(function() {
 			$("#popup").show();
+			$("#popup #softwareName").text($(this).text());
+			
+			var softwareDescription = dataToUse[$(this).attr("data")];
+			var lastIndex = softwareDescription.license.lastIndexOf("/");
+			var str = softwareDescription.license.substring(lastIndex + 1);
+			str = str.split("_").join(" ");
+			$("#popup #license").text(str);
+			$("#popup #os").text($("#operatingSystem option:selected").text());
+			$("#popup #release").text(softwareDescription.release);
+			$("#popup #release").text(softwareDescription.link);
+			
 			$("#popup").draggable();
 		})
 	}
 	
 	function showDependencyTree(data, margin) {
-		addDependencyToTree(data.userFriendlyName + " " + ((data.version != "none") ? data.version : ""), margin);
+		addDependencyToTree(data.userFriendlyName, ((data.version != "none") ? data.version : ""), margin);
 		
 		if (data.dependsOn.length > 0) {
 			for (var i = 0; i < data.dependsOn.length; i++) {
@@ -45,9 +56,9 @@
 		}
 	}
 	
-	function addDependencyToTree(dependencyName, margin) {
-		$("#right").append("<div class='dependencyElement' style=\"cursor: pointer; margin-left:" + margin + "px\">" 
-				+ dependencyName + "</div>");
+	function addDependencyToTree(dependencyName, version, margin) {
+		$("#right").append("<div class='dependencyElement' data=\"" + dependencyName+ "\" style=\"cursor: pointer; margin-left:" + margin + "px\">" 
+				+ dependencyName + " " + version + "</div>");
 	}
 	
 	function handlePopulateControls(data) {

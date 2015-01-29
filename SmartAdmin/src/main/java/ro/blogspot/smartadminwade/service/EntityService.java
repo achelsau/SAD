@@ -87,6 +87,9 @@ public class EntityService {
 			}
 			architectures.add(soft.getOsArchitecture());
 
+			description.setLicense(soft.getLicense());
+			description.setLink(soft.getLink());
+
 			descriptions.put(soft.getUserFriendlyName(), description);
 		}
 

@@ -165,6 +165,7 @@
         <rdf:type rdf:resource="&sad;SoftwareApplication"/>
         <doap:release>2014-12-20</doap:release>
         <doap:Version>3.2</doap:Version>
+		<doap:download-page>http://maven.apache.org/download.cgi</doap:download-page>
         <UserFriendlyName>Apache Maven</UserFriendlyName>
         <Architecture rdf:resource="&dbpedia;64-bit_computing"/>
         <doap:license rdf:resource="&dbpedia;Apache_License"/>
@@ -292,7 +293,7 @@
 
     <owl:NamedIndividual rdf:about="&sad;JDK_7_Windows_x86">
         <rdf:type rdf:resource="&sad;SoftwareApplication"/>
-        <doap:Version rdf:datatype="&xsd;decimal">7</doap:Version>
+        <doap:Version>7</doap:Version>
         <doap:release>2013-11-20</doap:release>
         <doap:license>http://usefulinc.com/doap/licenses/Sun_license</doap:license>
         <UserFriendlyName>JDK</UserFriendlyName>
